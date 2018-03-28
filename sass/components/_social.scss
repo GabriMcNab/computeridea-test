@@ -1,0 +1,21 @@
+.social {
+
+  &__icon-box {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }  
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-grey-light-2;
+    opacity: 0.8;
+    transition: all 0.2s;
+  
+    &:hover {
+      opacity: 1;
+      transform: translateY(-3px) scale(1.05);
+    }
+  }
+}

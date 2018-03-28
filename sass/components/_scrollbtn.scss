@@ -1,0 +1,33 @@
+.scrollbtn {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $color-grey-light-1;
+  padding: 1.5rem 3rem;
+  border-radius: 100px;
+
+  opacity: 0;
+  animation: bounce 1s ease-in-out infinite,
+             fadeIn 1s 1.5s ease-in forwards;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+
+  &:hover {
+    background-color: $color-grey-light-2;
+  }
+
+  @include respond(phone) {
+    padding: 1.5rem;
+  }
+}
