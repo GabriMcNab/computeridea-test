@@ -1,0 +1,73 @@
+.contact-form {
+  &__group:not(:last-child) {
+      margin-bottom: 1rem;
+  }
+
+  &__input {
+      font-size: 1.5rem;
+      font-family: inherit;
+      color: inherit;
+      padding: 1rem 1.5rem;
+      border-radius: 2px;
+      background-color: rbga(#fff, .5);
+      border: none;
+      border-bottom: 3px solid transparent;
+      resize: none;
+      width: 100%;
+      display: block;
+      transition: all .3s;
+
+      &:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba(#000, .1);
+          border-bottom: 3px solid #1ac91d;
+      }
+
+      &:focus:invalid {
+          border-bottom: 3px solid #d61b1b;
+      }
+
+      &::-webkit-input-placeholder {
+          color: $color-grey-dark-3;
+      }
+  }
+
+
+  &__label {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-left: 2rem;
+      margin-top: 0.5rem;
+      color: $color-grey-light-1;
+      display: block;
+      transition: all .3s;
+  }
+
+  &__input:placeholder-shown + &__label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem);
+  }
+
+  &__btn {
+    border: none;
+    padding: 1rem 3rem;
+    margin-top: 1.5rem;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    transition: all 0.2s;
+  }
+
+  &__btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+  }
+
+  &__btn:active,
+  &__btn:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+  }
+}

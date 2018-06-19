@@ -6,16 +6,23 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/button";
 @import "components/card";
+@import "components/contact-form";
 @import "components/contact";
 @import "components/hamburger";
 @import "components/logo";
 @import "components/partner";
-@import "components/scrollbtn";
+@import "components/popup";
+@import "components/service";
 @import "components/social";
 
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/navbar";
+@import "layout/sidebar";
+@import "layout/table";
 
+@import "pages/contatti";
 @import "pages/home";
+@import "pages/servizi";

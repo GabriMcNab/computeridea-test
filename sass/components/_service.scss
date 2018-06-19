@@ -1,0 +1,60 @@
+.service { 
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 3px;
+  background-color: $color-grey-light-1;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__img {
+    width: 50%;
+    margin-bottom: 2rem;  
+    border-radius: 5px; 
+    position: relative;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+
+    &:not(:last-child){
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__box {
+    width: 85%;
+    margin: 2rem auto;
+  }
+
+  &__list {
+    font-size: 1.6rem;
+    column-count: 2;
+    column-gap: 5rem;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding: 1rem;
+  }
+
+  &__list-item {
+    margin-bottom: 1rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    color: $color-primary-light;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-primary-dark;
+      transform: translateY(-2px) scale(1.01);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

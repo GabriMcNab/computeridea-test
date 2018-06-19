@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+<head>
+  <title>Contatti | Computeridea Snc Genova | Assistenza e riparazione PC</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Computeridea Informatica Personal Computer PC Hardware Software Assistenza Gestionali Contabilità Siti Web Monitor Stampanti">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo-box">
+      <img src="img/logo.png" class="logo" alt="Computeridea logo">
+    </a>
+    <ul class="nav__items">
+      <li class="nav__item">
+        <a href="index.html" class="nav__link">Home</a>
+      </li>
+      <li class="nav__item">
+        <a href="servizi.html" class="nav__link">Servizi</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Gestionale</a>
+      </li>
+      <li class="nav__item">
+        <a href="vendita.html" class="nav__link">Vendita</a>
+      </li>
+      <li class="nav__item current-page">
+        <a href="contatti.html" class="nav__link">Contatti</a>
+      </li>
+    </ul>
+    <div class="nav__contacts">
+      <a class="contact" href="mailto:info@computeridea.eu">
+        <svg class="contact__icon">
+          <use xlink:href="img/sprite.svg#envelope"></use>
+        </svg>
+        <p class="contact__text">Scrivici</p>
+      </a>
+      <a class="contact" href="tel:0103777176">
+        <svg class="contact__icon">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        <p class="contact__text">010 377 7176</p>
+      </a>
+    </div>
+    <input type="checkbox" class="hamburger__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="hamburger__button">
+      <span class="hamburger__icon">&nbsp;</span>
+    </label>
+  </nav>
+
+  <main class="contatti-container">
+    <div class="left">
+      <div class="about">
+        <h2 class="heading-2 mb-xs">Chi siamo</h1>
+          <p class="about__text">Entusiasmo e professionalità, ma soprattutto esperienza e tanto lavoro, ci consentono di mantenere un profilo sempre
+            attuale e competitivo nella realtà del lavoro in Liguria. Come molti altri, ci occupiamo di hardware, di software,
+            e di tutte le attività di assistenza ad essi correlati; ma prima di tutto, mettiamo a disposizione dei nostri
+            Clienti l'esperienza e la competenza necessarie per consigliarli al meglio nelle scelte che, in un settore in
+            così rapida evoluzione, si rivelano talvolta non così banali.</p>
+          <h3 class="heading-3 heading-3--thin">Ecco in breve la nostra offerta:</h3>
+          <ul class="about__list">
+            <li class="about__list-item">Personale tecnico specializzato che da molti anni opera nel settore</li>
+            <li class="about__list-item">Hardware di marchi primari e relativo materiale di consumo</li>
+            <li class="about__list-item">Software antivirus, software pacchettizzato e personalizzato</li>
+            <li class="about__list-item">Gestionali aziendali, personalizzazioni, formazione e consulenza contabile</li>
+            <li class="about__list-item">Assistenza tecnica completa presso il Cliente e in teleassistenza</li>
+            <li class="about__list-item">Progettazione, realizzazione e manutenzione reti locali e wireless</li>
+            <li class="about__list-item">Progettazione e realizzazione siti WEB</li>
+            <li class="about__list-item">Servizi di consulenza e supporto qualificati nella vendita e post-vendita</li>
+          </ul>
+          <p class="about__text--italic">Con i nostri Clienti assumiamo un impegno preciso, abbinando ai migliori PRODOTTI in commercio il SERVIZIO più
+            accurato: la Vostra soddisfazione è la nostra migliore presentazione!</p>
+      </div>
+      <div class="where">
+        <p class="where__text">Il nostro Ufficio Commerciale è a Vostra completa disposizione dal Lunedì al Venerdì, dalle ore 9.30 alle 18.00,
+          Via Sturla 54R a Genova San Martino.</p>
+        <div class="where__map" id="map"></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="contacts">
+        <h2 class="heading-2 heading-2--light mb-xs">Contatti</h2>
+        <p class="contacts__text">Per informazioni generali sull'azienda, scrivete a:
+          <a class="contacts__mail" href="mailto:info@computeridea.eu">info@computeridea.eu</a>
+        </p>
+        <p class="contacts__text">Per informazioni commerciali, preventivi e ordini:
+          <a class="contacts__mail" href="mailto:commerciale@computeridea.eu">commerciale@computeridea.eu</a>
+        </p>
+        <p class="contacts__text">Per assistenza hardware, software e gestionale:
+          <a class="contacts__mail" href="mailto:assistenza@computeridea.eu">assistenza@computeridea.eu</a>
+        </p>
+        <p class="contacts__text">Per informazioni amministrative e contabilità:
+          <a class="contacts__mail" href="mailto:amministrazione@computeridea.eu">amministrazione@computeridea.eu</a>
+        </p>
+        <p class="contacts__text">Per informazioni sulla fatturazione PA, scrivete a:
+          <a class="contacts__mail" href="mailto:fatturaPA@computeridea.eu">fatturaPA@computeridea.eu</a>
+        </p>
+        <p class="contacts__text">Sviluppo software gestionale:
+          <a class="contacts__mail" href="mailto:fabio@computeridea.eu">fabio@computeridea.eu</a>
+        </p>
+        <h3 class="heading-3 heading-3--light">Oppure usa il modulo sottostante:</h3>
+      </div>
+      <div class="form-box">
+        <form action="#" class="contact-form">
+          <div class="contact-form__group">
+            <input type="text" class="contact-form__input" placeholder="Nome e cognome" id="name" required>
+            <label for="name" class="contact-form__label">Nome e cognome</label>
+          </div>
+          <div class="contact-form__group">
+            <input type="email" class="contact-form__input" placeholder="Email" id="email" required>
+            <label for="email" class="contact-form__label">Email</label>
+          </div>
+          <div class="contact-form__group">
+            <input type="subject" class="contact-form__input" placeholder="Oggetto" id="subject" required>
+            <label for="subject" class="contact-form__label">Oggetto</label>
+          </div>
+          <div class="contact-form__group">
+            <textarea class="contact-form__input" placeholder="Come possiamo aiutare?" rows="10" cols="50"></textarea>
+          </div>
+          <div class="contact-form__group">
+            <button class="contact-form__btn">Invia</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <nav class="footer__nav">
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Mappa del Sito</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__legal">
+        <p>COMPUTERIDEA S.N.C. di Piazzalunga Fabio & C.</p>
+        <p>Sede Legale : Via G. Boero 16/17 GENOVA - Reg. Imp. Genova 03429240108 - C.C.I.A.A. R.E.A. 344179</p>
+        <p>Ufficio Commerciale: Via Sturla, 54 R - 16131 - GENOVA - Tel. 010.377.71.76 - Fax 010.377.63.71 - C.F./P.I. 03429240108</p>
+        <p>info@computeridea.eu - computerideasnc@pec.it</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; Computeridea 2018</span>
+      <div class="social">
+        <a href="#" class="social__icon-box">
+          <svg class="social__icon">
+            <use xlink:href="img/brands.svg#twitter"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__icon-box">
+          <svg class="social__icon">
+            <use xlink:href="img/brands.svg#facebook"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__icon-box">
+          <svg class="social__icon">
+            <use xlink:href="img/brands.svg#linkedin"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="scripts/dropdown.js"></script>
+  <script src="scripts/navbar.js"></script>
+
+  <!-- Google Maps -->
+  <script src="scripts/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv9OEutlgkbM7DomcFXtdjXt3jMMFS6BE&callback=initMap">
+  </script>
+</body>
+
+</html>

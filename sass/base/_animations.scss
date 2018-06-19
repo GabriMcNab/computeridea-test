@@ -1,16 +1,16 @@
 @keyframes bounce {
   0% {
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
     box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.6);
   }
 
   50% {
-    transform: translateX(-50%) translateY(-1rem);
+    transform: translateY(-1rem);
     box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.4);
   }
 
   100% {
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
     box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.6);
   }
 }

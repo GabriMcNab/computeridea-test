@@ -21,3 +21,46 @@
 .show {
   transform: scaleY(1) !important;
 }
+
+.fl-left {
+  float: left;
+  margin-right: 2rem;
+}
+
+.fl-right {
+  float: right;
+  margin-left: 2rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.italic {
+  font-style: italic
+}
+
+.red {
+  color: #c6331f;
+}
+
+.green {
+  color: green;
+}
+
+.current-page {
+  background-color: $color-grey-light-1;
+}
+
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.scale {
+  transform: scale(1) !important;
+}
+
+.active {
+  background-color: $color-primary-light;
+}

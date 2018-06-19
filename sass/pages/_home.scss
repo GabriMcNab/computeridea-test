@@ -11,17 +11,21 @@ body {
   overflow: hidden;
 }
 
-.header {
+.hero {
   height: calc(100vh - 8rem);
+  padding: 8rem 0;
   background-image: $gradient-primary;
   color: $color-grey-light-1;
+  overflow: hidden;
 
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
   &__content-box {
     max-width: 100%;
-    background-color: rgba($color-grey-dark-3, 0.3);
+    text-shadow: 0 1px 2px $color-primary-dark;
     text-align: center;
     padding: 5vh 20vw;
 
@@ -48,16 +52,12 @@ body {
       width: 85vw;
     }
   }
-
-  &__text {
-    font-size: 1.8rem;
-  }
 }
 
 .section-services {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 2rem 4rem;
+  padding: 2rem 0;
   background-color: $color-grey-light-1;
   box-shadow: 0 2rem 5rem rgba(0,0,0,0.2);
 

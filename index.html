@@ -15,21 +15,24 @@
 <body>
   <!-- Navbar -->
   <nav class="nav">
-    <div class="nav__logo-box">
-      <img src="img/logo-old.bmp" class="logo" alt="Computeridea logo">
-    </div>
+    <a href="index.html" class="nav__logo-box">
+      <img src="img/logo.png" class="logo" alt="Computeridea logo">
+    </a>
     <ul class="nav__items">
-      <li class="nav__item">
-        <a href="#" class="nav__link">Home</a>
+      <li class="nav__item current-page">
+        <a href="index.html" class="nav__link">Home</a>
       </li>
       <li class="nav__item">
-        <a href="#" class="nav__link">Servizi</a>
+        <a href="servizi.html" class="nav__link">Servizi</a>
       </li>
       <li class="nav__item">
-        <a href="#" class="nav__link">L'azienda</a>
+        <a href="#" class="nav__link">Gestionale</a>
       </li>
       <li class="nav__item">
-        <a href="#" class="nav__link">Contatti</a>
+        <a href="vendita.html" class="nav__link">Vendita</a>
+      </li>
+      <li class="nav__item">
+        <a href="contatti.html" class="nav__link">Contatti</a>
       </li>
     </ul>
     <div class="nav__contacts">
@@ -52,15 +55,15 @@
     </label>
   </nav>
   <!-- header -->
-  <header class="header">
+  <header class="hero">
     <div id="canvas" class="canvas"></div>
-    <div class="header__content-box">
-      <img src="img/computeridea.svg" alt="computeridea" class="header__title">
+    <div class="hero__content-box">
+      <img src="img/computeridea.svg" alt="computeridea" class="hero__title">
       <h1 class="heading-1 heading-1--main mb-sm">Soluzioni Informatiche</h1>
       <h3 class="heading-1 heading-1--sub mb-sm">Dal 1994 l'informatica per le piccole aziende a Genova e in Liguria</h3>
     </div>
-    <a class="scrollbtn" id="scrollbtn" href="#services">
-      <span class="scrollbtn__text">Scopri i nostri servizi</span>
+    <a class="button button--light button--animated" id="scrollbtn" href="#services">
+      Scopri i nostri servizi
     </a>
   </header>
   <!-- Section services -->
@@ -68,67 +71,78 @@
     <h1 class="heading-1 heading-1--dark">I nostri principali servizi</h1>
     <hr class="hr hr--dark mb-sm">
     <div class="grid">
-      <div class="card">
+      <a href="#" class="card">
         <svg class="card__icon">
           <use xlink:href="img/sprite.svg#shopping-bag"></use>
         </svg>
         <h3 class="heading-3">Vendita</h3>
-        <p class="card__text mb-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <a href="#" class="card__link">Leggi Tutto &rarr;</a>
-      </div>
-      <div class="card">
+        <p class="card__text mb-sm">Possiamo soddisfare ogni Vostra richiesta relativa a qualsiasi marchio e prodotto hardware e software; non esitate
+          a contattare il nostro Ufficio Commerciale, per avere informazioni su caratteristiche dei prodotti, quotazioni,
+          disponibilità e tempi di consegna: saremo lieti di fornire tutti i dettagli!</p>
+        <span class="card__link">Leggi Tutto &rarr;</span>
+      </a>
+      <a href="servizi.html#assistenza" class="card">
         <svg class="card__icon">
           <use xlink:href="img/sprite.svg#wrench"></use>
         </svg>
         <h3 class="heading-3">Assistenza e riparazioni</h3>
-        <p class="card__text mb-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <a href="#" class="card__link">Leggi Tutto &rarr;</a>
-      </div>
-      <div class="card">
-        <svg class="card__icon">
-          <use xlink:href="img/sprite.svg#bug"></use>
-        </svg>
-        <h3 class="heading-3">Rimozione virus</h3>
-        <p class="card__text mb-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <a href="#" class="card__link">Leggi Tutto &rarr;</a>
-      </div>
-      <div class="card">
+        <p class="card__text mb-sm">Per assicurare un futuro tranquillo a Voi e al Vostro PC, consultate il nostro Ufficio Commerciale per scoprire la
+          formula di Assistenza a Voi più congeniale:</p>
+        <ul class="card__list mb-sm">
+          <li>On site support - OSS</li>
+          <li>Contratti di assistenza</li>
+          <li>Contratti a ticket</li>
+        </ul>
+        <span class="card__link">Leggi Tutto &rarr;</span>
+      </a>
+      <a href="#" class="card">
         <svg class="card__icon">
           <use xlink:href="img/sprite.svg#chart-bar"></use>
         </svg>
         <h3 class="heading-3">Software gestionali</h3>
-        <p class="card__text mb-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <a href="#" class="card__link">Leggi Tutto &rarr;</a>
-      </div>
-      <div class="card">
+        <p class="card__text mb-sm">Sappiamo bene che ogni attività, ogni Azienda, ha problematiche uniche, necessità proprie, richieste specifiche.
+          Perché non sia un software qualunque, ma il "Vostro" software, il nostro settore sviluppo è a disposizione per
+          ogni tipo di personalizzazione, dalla minima modifica di una stampa, alla creazione ex novo di procedure che gestiscano
+          completamente settori di nicchia: consultateci!!</p>
+        <span href="#" class="card__link">Leggi Tutto &rarr;</span>
+      </a>
+      <a href="#" class="card">
         <svg class="card__icon">
-          <use xlink:href="img/sprite.svg#sitemap"></use>
+          <use xlink:href="img/sprite.svg#code"></use>
         </svg>
-        <h3 class="heading-3">Installazione reti web</h3>
-        <p class="card__text mb-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <a href="#" class="card__link">Leggi Tutto &rarr;</a>
-      </div>
-      <div class="card">
+        <h3 class="heading-3">Realizzazione siti web</h3>
+        <p class="card__text mb-sm">Il sito Internet Aziendale è diventato molto più di un biglietto da visita: è l'immagine della Vostra Azienda. Ecco
+          perché non ci si può più permettere di avere una "paginetta fatta in casa" per rappresentarci on line; ascolteremo
+          le vostre richieste in fatto di grafica e contenuti, e realizzeremo insieme, unendo le vostre idee e le nostre
+          proposte, il sito su misura per voi.</p>
+        <span href="#" class="card__link">Leggi Tutto &rarr;</span>
+      </a>
+      <a href="servizi.html#sicurezza" class="card">
         <svg class="card__icon">
           <use xlink:href="img/sprite.svg#database"></use>
         </svg>
         <h3 class="heading-3">Sicurezza e backup dati</h3>
-        <p class="card__text mb-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <a href="#" class="card__link">Leggi Tutto &rarr;</a>
-      </div>
+        <p class="card__text mb-sm">
+          Un buon antivirus, il gruppo di continuità e, se necessario, un dispositivo firewall: sono le misure minime di sicurezza
+          che ormai la maggior parte di voi comprende essere indispensabili per proteggere i nostri sistemi informatici.
+          Eppure spesso ci si dimentica di un rischio tutt'altro che trascurabile...</p>
+        <span href="#" class="card__link">Leggi Tutto &rarr;</span>
+      </a>
+      <a href="servizi.html#fattura-elettronica" class="card">
+        <svg class="card__icon">
+          <use xlink:href="img/sprite.svg#clipboard-list"></use>
+        </svg>
+        <h3 class="heading-3">Fattura elettronica P.A.</h3>
+        <p class="card__text mb-sm">Dallo scorso 6 giugno 2014 è entrato in vigore l'obbligo della fatturazione elettronica nei confronti delle Pubbliche
+          Amministrazioni. Computeridea ha studiato a fondo queste tematiche, verificando sulla propria pelle le varie
+          soluzioni. Abbiamo poi esteso la nostra esperienza ad alcuni clienti ed infine ci siamo accreditati come Intermediari
+          di un ente certificato per potervi proporre una soluzione a tutto tondo.</p>
+        <span href="#" class="card__link">Leggi Tutto &rarr;</span>
+      </a>
     </div>
+    <a class="button button--dark" href="servizi.html">
+      <span class="button__text">Scopri tutti i servizi</span>
+    </a>
   </main>
   <!-- Section partners -->
   <section class="section-partners">
@@ -194,7 +208,9 @@
   <script src="scripts/canvas-renderer.js"></script>
   <script src="scripts/3d-lines-animation.js"></script>
   <!-- Main JS -->
-  <script src="scripts/main.js"></script>
+  <script src="scripts/dropdown.js"></script>
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/scroll-animation.js"></script>
 
 </body>
 

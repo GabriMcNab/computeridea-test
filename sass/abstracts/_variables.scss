@@ -12,6 +12,7 @@ $color-grey-dark-1: #878787;
 $color-grey-dark-2: #555;
 $color-grey-dark-3: #373737;
 
-$shadow-dark: 0 1rem 5rem rgba(0,0,0,0.6);
+$shadow-dark: 0 0.5rem 4rem rgba(0,0,0,0.6);
 
 $gradient-primary: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light);
+$gradient-primary-reverse: linear-gradient(to right top, $color-primary-dark, $color-primary-light);
