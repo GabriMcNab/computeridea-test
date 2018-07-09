@@ -2,7 +2,7 @@
 document.onreadystatechange = () => {
   if(document.readyState == "interactive") {
     //select all sections
-    sections = document.querySelectorAll(".service");
+    sections = document.querySelectorAll(".service-separator");
 
     window.addEventListener("scroll", () => {
       //currentScroll is the number of pixel that the window has been scrolled

@@ -4,7 +4,7 @@ $color-primary-light: #2980b9;
 
 $color-footer: #353535;
 
-$color-grey-light-1: #f5f5f5;
+$color-grey-light-1: #f1f1f1;
 $color-grey-light-2: #ddd;
 $color-grey-light-3: rgb(155, 155, 155);
 
@@ -13,6 +13,7 @@ $color-grey-dark-2: #555;
 $color-grey-dark-3: #373737;
 
 $shadow-dark: 0 0.5rem 4rem rgba(0,0,0,0.6);
+$shadow-light: 0 0.5rem 2rem rgba(0,0,0,0.2);
 
 $gradient-primary: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light);
 $gradient-primary-reverse: linear-gradient(to right top, $color-primary-dark, $color-primary-light);

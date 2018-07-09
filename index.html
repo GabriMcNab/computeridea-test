@@ -23,10 +23,42 @@
         <a href="index.html" class="nav__link">Home</a>
       </li>
       <li class="nav__item">
-        <a href="servizi.html" class="nav__link">Servizi</a>
+        <a href="servizi.html" class="nav__link" id="servizi">Servizi</a>
+        <div class="dropdown" id="servizi-dropdown">
+          <ul class="dropdown__items">
+            <li class="dropdown__item">
+              <a href="servizi.html#assistenza" class="dropdown__link">Assistenza e riparazioni</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#sicurezza" class="dropdown__link">Sicurezza e backup dati</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#rimozione-virus" class="dropdown__link">Rimozione virus</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#siti-web" class="dropdown__link">Realizzazione siti web</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#fattura-elettronica" class="dropdown__link">Fattura elettronica P.A.</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#smaltimento-toner" class="dropdown__link">Smaltimento toner</a>
+            </li>
+          </ul>
+        </div>
       </li>
       <li class="nav__item">
-        <a href="#" class="nav__link">Gestionale</a>
+        <a href="gestionale.html" class="nav__link" id="gestionale">Gestionale</a>
+        <div class="dropdown" id="gestionale-dropdown">
+            <ul class="dropdown__items">
+              <li class="dropdown__item">
+                <a href="gestionale.html" class="dropdown__link">Personalizzazioni software</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="ondaIQ.html" class="dropdown__link">Onda IQ</a>
+              </li>
+            </ul>
+          </div>
       </li>
       <li class="nav__item">
         <a href="vendita.html" class="nav__link">Vendita</a>
@@ -71,7 +103,7 @@
     <h1 class="heading-1 heading-1--dark">I nostri principali servizi</h1>
     <hr class="hr hr--dark mb-sm">
     <div class="grid">
-      <a href="#" class="card">
+      <a href="vendita.html" class="card">
         <svg class="card__icon">
           <use xlink:href="img/sprite.svg#shopping-bag"></use>
         </svg>
@@ -104,7 +136,7 @@
           Perché non sia un software qualunque, ma il "Vostro" software, il nostro settore sviluppo è a disposizione per
           ogni tipo di personalizzazione, dalla minima modifica di una stampa, alla creazione ex novo di procedure che gestiscano
           completamente settori di nicchia: consultateci!!</p>
-        <span href="#" class="card__link">Leggi Tutto &rarr;</span>
+        <span href="gestionale.html" class="card__link">Leggi Tutto &rarr;</span>
       </a>
       <a href="#" class="card">
         <svg class="card__icon">
@@ -144,6 +176,12 @@
       <span class="button__text">Scopri tutti i servizi</span>
     </a>
   </main>
+  <!-- Banner -->
+  <div class="banner banner--dark">
+    <a href="https://www.netsons.com/" class="banner__link">
+      <img src="img/hosting-pro.jpg" alt="hosting pro banner" class="banner__img">
+    </a>
+  </div>
   <!-- Section partners -->
   <section class="section-partners">
     <h1 class="heading-1 heading-1--light">I nostri partners</h1>

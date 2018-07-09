@@ -23,10 +23,42 @@
         <a href="index.html" class="nav__link">Home</a>
       </li>
       <li class="nav__item">
-        <a href="servizi.html" class="nav__link">Servizi</a>
+        <a href="servizi.html" class="nav__link" id="servizi">Servizi</a>
+        <div class="dropdown" id="servizi-dropdown">
+          <ul class="dropdown__items">
+            <li class="dropdown__item">
+              <a href="servizi.html#assistenza" class="dropdown__link">Assistenza e riparazioni</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#sicurezza" class="dropdown__link">Sicurezza e backup dati</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#rimozione-virus" class="dropdown__link">Rimozione virus</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#siti-web" class="dropdown__link">Realizzazione siti web</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#fattura-elettronica" class="dropdown__link">Fattura elettronica P.A.</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#smaltimento-toner" class="dropdown__link">Smaltimento toner</a>
+            </li>
+          </ul>
+        </div>
       </li>
       <li class="nav__item">
-        <a href="#" class="nav__link">Gestionale</a>
+        <a href="gestionale.html" class="nav__link" id="gestionale">Gestionale</a>
+        <div class="dropdown" id="gestionale-dropdown">
+          <ul class="dropdown__items">
+            <li class="dropdown__item">
+              <a href="gestionale.html" class="dropdown__link">Personalizzazioni software</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="ondaIQ.html" class="dropdown__link">Onda IQ</a>
+            </li>
+          </ul>
+        </div>
       </li>
       <li class="nav__item current-page">
         <a href="vendita.html" class="nav__link">Vendita</a>
@@ -56,11 +88,98 @@
   </nav>
 
   <main class="vendita-container">
-    <div class="hardware">
-      
-    </div>  
-    <div class="software">
+    <div class="content content--half">
+      <h2 class="heading-2 center-text mb-sm">Hardware</h3>
+        <div class="center-text">
+          <img src="img/hardware.jpg" alt="immagine computer" class="content__img">
+        </div>
+        <h3 class="heading-3 center-text mb-sm">Preventivi gratuiti!</h3>
+        <p class="content__text">Possiamo soddisfare ogni Vostra richiesta relativa a qualsiasi marchio e prodotto; non esitate a contattare il nostro
+          Ufficio Commerciale, per avere informazioni su caratteristiche dei prodotti, quotazioni, disponibilità e tempi
+          di consegna: saremo lieti di fornire tutti i dettagli!</p>
+        <h4 class="heading-4">ANALISI DELLA RICHIESTA</h4>
+        <p class="content__text">Individuazione del prodotto più adatto alle Vostre effettive necessità e valutazione delle possibili alternative
+          in commercio.</p>
+        <h4 class="heading-4">ELABORAZIONE DELL'OFFERTA</h4>
+        <p class="content__text">con le nostre migliori quotazioni aggiornate alle ultime promo disponibili sul mercato. </p>
+        <h4 class="heading-4">CONSEGNA GRATUITA, INSTALLAZIONE E CONFIGURAZIONE</h4>
+        <p class="content__text">se volete il servizio completo a domicilio. </p>
+        <h4 class="heading-4">ASSISTENZA TECNICA COMPLETA</h4>
+        <p class="content__text">direttamente presso i Vostri uffici, abitazione o nel nostro laboratorio.</p>
+        <h4 class="heading-4">FORNITURA DEL MATERIALE DI CONSUMO ORIGINALE</h4>
+        <p class="content__text">per il funzionamento ottimale delle Vostre apparecchiature.</p>
+    </div>
+    <div class="content content--half">
+      <h2 class="heading-2 mb-sm center-text">Software</h3>
+        <div class="center-text">
+          <img src="img/software.jpg" alt="immagine computer" class="content__img">
+        </div>
+        <h3 class="heading-3 center-text mb-sm">Software commerciale in tempi brevissimi!</h3>
+        <p class="content__text">Grazie ad una solida esperienza nei i più svariati settori, il nostro preciso intento è interagire con i nostri clienti
+          offrendo un servizio globale, serio ed affidabile.</p>
+        <h4 class="heading-4">CONSULENZA ED ANALISI APPROFONDITA</h4>
+        <p class="content__text">Delle reali necessità operative dell'Azienda</p>
+        <h4 class="heading-4">INSTALLAZIONE ED AVVIAMENTO PERSONALIZZATI</h4>
+        <p class="content__text">Una configurazione iniziale accurata come base di un risultatoottimale nel tempo</p>
+        <h4 class="heading-4">CORSI DI FORMAZIONE ED AGGIORNAMENTO</h4>
+        <p class="content__text">Per consentire all'utente di sfruttare al meglio tutte le funzionalità del programma, in tempi rapidi </p>
+        <h4 class="heading-4">ASSISTENZA ONLINE</h4>
+        <p class="content__text">A risposta immediata ai Vostri quesiti operativi e contabili con gli strumenti più rapidi ed economici: l'Hot-Line
+          telefonica ed il servizio di Tele-Assistenza (accesso remoto)</p>
+        <h4 class="heading-4">INTERVENTO TEMPESTIVO</h4>
+        <p class="content__text">Presso i Vostri uffici, di personale altamente qualificato per la soluzione di problemi informatici di maggior rilievo</p>
+        <h4 class="heading-4">AGGIORNAMENTI</h4>
+        <p class="content__text">All'uscita di ogni nuova release ed in occasione di ogni eventuale novità in campo fiscale</p>
+    </div>
+    <div class="banner banner--blue">
+      <div class="banner__container">
+        <img src="img/carta-docente.png" alt="logo carta del docente" class="banner__img">
+      </div>
+      <div class="banner__container">
+        <h2 class="banner__text">Usa qui il tuo buono</h2>
+        <a href="https://cartadeldocente.istruzione.it" class="button button--light">Scopri di più</a>
+      </div>
+    </div>
+    <div class="content content--big">
+      <div class="center-text">
+        <img src="img/grenke.png" alt="logo grenke servizi finanziari" height="60rem" class="mb-sm">
+      </div>
+      <h2 class="heading-2 center-text mb-sm">Servizi finanziari</h2>
+      <p class="content__text">Per supportare le aziende nei propri investimenti, piccoli o grandi che siano, Computeridea ha scelto come partner
+        finanziario l'esperienza e la professionalità di Grenke locazione S.r.l. Ecco i principali vantaggi per il cliente:</p>
 
+      <ul class="content__list">
+
+        <h4 class="heading-4 mb-sm">Finanziari</h4>
+        <li class="content__list-item">Possibilità di dilazionare il pagamento aumentando la liquidità del cliente</li>
+        <li class="content__list-item">Risoluzione dei problemi di cash flow (budget e liquidità)</li>
+        <li class="content__list-item">Costi certi e programmati (canoni fissi e non indicizzati)</li>
+        <li class="content__list-item mb-sm">Assenza di segnalazioni alla Centrale Rischi (non si intaccano le linee di credito)</li>
+
+        <h4 class="heading-4 mb-sm">Asset/Bilancio</h4>
+
+        <li class="content__list-item">Al contrario dell'acquisto tramite fido bancario e al finanziamento o leasing da parte di una società finanziaria,
+          con il Noleggio non viene appesantito il bilancio dell'azienda e nessuna richiesta viene inoltrata alla centrali
+          rischi
+        </li>
+
+        <h4 class="heading-4 mb-sm">Fiscali</h4>
+
+        <li class="content__list-item">Nel Noleggio non ci sono ammortamenti e il canone viene considerato un puro costo. Il cliente può quindi dedurre
+          totalmente i canoni pagati nell'anno</li>
+        <li class="content__list-item mb-sm">Rispetto ad altri tipi di finanziamento, con il Noleggio operativo non si paga l'IRAP sulla quota interessi, non
+          esiste la distinzione tra quota capitale e quota interessi e non si paga il commercialista per il relativo calcolo</li>
+
+        <h4 class="heading-4 mb-sm">Flessibilità del contratto</h4>
+
+        <li class="content__list-item">Nel corso del Noleggio esiste la possibilità di sostituire e aggiungere altri beni, configurando così un prodotto
+          di noleggio estremamente flessibile</li>
+
+      </ul>
+      <h3 class="heading-3 center-text">
+        <a href="#" class="content__link">Scarica</a>
+        qui la tua brochure
+      </h3>
     </div>
   </main>
 

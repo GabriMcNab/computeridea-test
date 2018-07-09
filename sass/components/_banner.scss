@@ -1,0 +1,46 @@
+.banner {
+  width: 100%;
+  padding: 2rem 5rem;
+
+  display: flex;
+  justify-content: center;
+
+  &--blue {
+    background-color: $color-primary;
+  }
+
+  &--dark {
+    background-color: $color-grey-dark-3;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child){
+      margin-right: 15rem;
+    }
+  }
+
+  &__img {
+    height: 10rem;
+  }
+
+  &__text {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-grey-light-1;
+  }
+
+  &__link {
+    display: inline-block;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

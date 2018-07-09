@@ -1,0 +1,64 @@
+.dropdown {
+  width: 30rem;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: $shadow-light;
+
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.2s;
+
+  @include respond(phone) {
+    position: relative;
+    visibility: visible;
+    transform: scale(1);
+    background-color: #f1f1f1;
+    box-shadow: none;
+    width: 100%;
+    text-align: center;
+
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__items {
+    list-style: none;
+  }
+
+  &__item {
+    border-top: 1px solid $color-grey-light-2;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: block;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: $color-grey-dark-2;
+    opacity: 0.8;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-2px);
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .nav__item:hover #servizi-dropdown {
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .nav__item:hover #gestionale-dropdown {
+    visibility: visible;
+    transform: scale(1);
+  }
+}
+

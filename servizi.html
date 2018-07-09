@@ -23,10 +23,42 @@
         <a href="index.html" class="nav__link">Home</a>
       </li>
       <li class="nav__item current-page">
-        <a href="servizi.html" class="nav__link">Servizi</a>
+        <a href="servizi.html" class="nav__link" id="servizi">Servizi</a>
+        <div class="dropdown" id="servizi-dropdown">
+          <ul class="dropdown__items">
+            <li class="dropdown__item">
+              <a href="servizi.html#assistenza" class="dropdown__link">Assistenza e riparazioni</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#sicurezza" class="dropdown__link">Sicurezza e backup dati</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#rimozione-virus" class="dropdown__link">Rimozione virus</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#siti-web" class="dropdown__link">Realizzazione siti web</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#fattura-elettronica" class="dropdown__link">Fattura elettronica P.A.</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#smaltimento-toner" class="dropdown__link">Smaltimento toner</a>
+            </li>
+          </ul>
+        </div>
       </li>
       <li class="nav__item">
-        <a href="#" class="nav__link">Gestionale</a>
+        <a href="gestionale.html" class="nav__link" id="gestionale">Gestionale</a>
+        <div class="dropdown" id="gestionale-dropdown">
+          <ul class="dropdown__items">
+            <li class="dropdown__item">
+              <a href="gestionale.html" class="dropdown__link">Personalizzazioni software</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="ondaIQ.html" class="dropdown__link">Onda IQ</a>
+            </li>
+          </ul>
+        </div>
       </li>
       <li class="nav__item">
         <a href="vendita.html" class="nav__link">Vendita</a>
@@ -54,6 +86,7 @@
       <span class="hamburger__icon">&nbsp;</span>
     </label>
   </nav>
+
   <main class="main-content">
     <!-- Sidebar -->
     <nav class="sidebar">
@@ -80,70 +113,73 @@
     </nav>
     <!-- Content -->
     <div class="services-container">
-      <div class="service" id="assistenza">
-        <h2 class="heading-2 service__title mb-md">Assistenza e riparazioni</h2>
-        <img src="img/computer-repair.jpg" alt="Foto riparazioni" class="service__img fl-right">
-        <p class="service__text">Per assicurare un futuro tranquillo a Voi e al Vostro PC, consultate il nostro Ufficio Commerciale per scoprire la
+      <div class="service-separator" id="assistenza">&nbsp;</div>
+      <div class="content">
+        <h2 class="heading-2 content__title mb-md">Assistenza e riparazioni</h2>
+        <img src="img/computer-repair.jpg" alt="Foto riparazioni" class="content__img fl-right">
+        <p class="content__text">Per assicurare un futuro tranquillo a Voi e al Vostro PC, consultate il nostro Ufficio Commerciale per scoprire la
           formula di Assistenza a Voi più congeniale: </p>
         <h3 class="heading-3 heading-3--thin">ON SITE SUPPORT - OSS - </h3>
-        <p class="service__text">Estensione della garanzia on site (di 1 o 2 anni) sul PC: con un minimo investimento iniziale, Vi garantirete la
+        <p class="content__text">Estensione della garanzia on site (di 1 o 2 anni) sul PC: con un minimo investimento iniziale, Vi garantirete la
           copertura totale hardware del Vostro PC; intervento gratuito ON SITE in tempi brevissimi sostituzione dei componenti
           guasti a costo zero macchina in sostituzione a Vostra disposizione</p>
         <h3 class="heading-3 heading-3--thin">CONTRATTO DI ASSISTENZA </h3>
-        <p class="service__text">La copertura di tutto il vostro sistema informatico; a fronte di un canone annuo vi sarà garantito:
+        <p class="content__text">La copertura di tutto il vostro sistema informatico; a fronte di un canone annuo vi sarà garantito:
           <br /> interventi tempestivi con precedenza sulle altre chiamate tariffa ridotta senza diritto di chiamata macchina in
           sostituzione
         </p>
         <h3 class="heading-3 heading-3--thin">CONTRATTO A TICKET</h3>
-        <p class="service__text">carnet buoni orari di intervento prepagati a tariffa speciale senza diritto di chiamata</p>
+        <p class="content__text">carnet buoni orari di intervento prepagati a tariffa speciale senza diritto di chiamata</p>
       </div>
-      <div class="service" id="sicurezza">
-        <h2 class="heading-2 service__title mb-sm">Sicurezza e backup dati</h2>
-        <img src="img/computer-security.jpg" alt="Lucchetto davanti ad un computer" class="service__img fl-left">
-        <p class="service__text">Un buon antivirus, il gruppo di continuità e, se necessario, un dispositivo firewall: sono le misure minime di sicurezza
+      <div class="service-separator" id="sicurezza">&nbsp;</div>
+      <div class="content">
+        <h2 class="heading-2 content__title mb-sm">Sicurezza e backup dati</h2>
+        <img src="img/computer-security.jpg" alt="Lucchetto davanti ad un computer" class="content__img fl-left">
+        <p class="content__text">Un buon antivirus, il gruppo di continuità e, se necessario, un dispositivo firewall: sono le misure minime di sicurezza
           che ormai la maggior parte di voi comprende essere indispensabili per proteggere i nostri sistemi informatici.
           Eppure spesso ci si dimentica di un rischio tutt'altro che trascurabile...</p>
-        <p class="service__text">I personal computer sono delle macchine e, come tutte le macchine, sono soggetti ad usura e guasti più o meno gravi;
+        <p class="content__text">I personal computer sono delle macchine e, come tutte le macchine, sono soggetti ad usura e guasti più o meno gravi;
           se cede l'alimentatore o la scheda video, poco male: si sostituiscono e in breve tempo il PC torna operativo; ma
           se è il DISCO FISSO a rompersi ?</p>
-        <p class="service__text">Per darvi un'idea della meccanica di questo componente, ve ne accenniamo brevemente il funzionamento, in modo molto
+        <p class="content__text">Per darvi un'idea della meccanica di questo componente, ve ne accenniamo brevemente il funzionamento, in modo molto
           semplice, ma efficace: a parte le ventoline di raffreddamento, l'hard disk è l'unica parte meccanica sempre in
           movimento all'interno del PC; è composto da uno o più dischi metallici magnetizzati che ruotano a oltre settemila
           giri al minuto, azionati da un microscopico motore; sopra di essi le testine di lettura e scrittura "galleggiano"
           a qualche micron di distanza ( circa un decimo del diametro di un capello ), sostenute da un cuscinetto d'aria
           generato dalla rotazione stessa dei dischi.</p>
-        <p class="service__text">Normalmente non ci si pensa, e non conoscendo questi dettagli tecnici, si dà più importanza ad altri componenti;
+        <p class="content__text">Normalmente non ci si pensa, e non conoscendo questi dettagli tecnici, si dà più importanza ad altri componenti;
           ma come potete immaginare, l'hard disk è la parte più delicata dei nostri PC e su di esso...sono memorizzati TUTTI
           i nostri dati.</p>
-        <p class="service__text">Pensate ora al vostro sistema informatico: cosa succederebbe se l'hard disk del vostro computer si rompesse ORA?
+        <p class="content__text">Pensate ora al vostro sistema informatico: cosa succederebbe se l'hard disk del vostro computer si rompesse ORA?
           Che ne sarebbe dei vostri documenti di Word e Excel e delle vostre e-mail? Come potrete recuperare i dati della
           contabilità o l'archivio con le fotografie dei vostri viaggi e della vostra famiglia? Tutto andrebbe irrimediabilmente
           perduto.
         </p>
-        <p class="service__text">Purtroppo è così: raramente si riescono a recuperare i dati memorizzati su Hard Disk guasti e spesso con costi davvero
+        <p class="content__text">Purtroppo è così: raramente si riescono a recuperare i dati memorizzati su Hard Disk guasti e spesso con costi davvero
           molto alti. Per questo motivo bisogna pensare in anticipo alla sicurezza dei dati ed agire prima che il disastro
           accada, perché dopo è troppo tardi !</p>
-        <p class="service__text">La soluzione è tanto semplice quanto ovvia: occorre fare delle copie di salvataggio ( i famosi backup ) dei nostri
+        <p class="content__text">La soluzione è tanto semplice quanto ovvia: occorre fare delle copie di salvataggio ( i famosi backup ) dei nostri
           preziosi dati. Bisogna farle spesso ( non una volta ogni 2 o 3 mesi ) ed è necessario conservarle in un luogo sicuro.</p>
-        <p class="service__text">Oggi esistono strumenti informatici che possono eseguire tutte le operazioni di salvataggio in modo sicuro, affidabile
+        <p class="content__text">Oggi esistono strumenti informatici che possono eseguire tutte le operazioni di salvataggio in modo sicuro, affidabile
           e soprattutto automatico, senza alcun intervento da vostra, né bisogno che, semplicemente, ve ne ricordiate. Non
           solo si possono salvare i dati, ma si può anche fare una copia completa dell'hard disk in modo che tutto quanto
           possa essere velocemente recuperato, compresi i programmi: avete idea di quante ore di lavoro occorrono per reinstallare
           il sistema operativo, i driver di periferica e tutti i programmi presenti su un PC, recuperare i dati dal backup
           (meno male che c'era) e riconfigurare tutto come prima ? </p>
-        <p class="service__text">Siamo sicuri che queste osservazioni non vi abbiano lasciato indifferenti; lo siamo perché sappiamo bene quanto siano
+        <p class="content__text">Siamo sicuri che queste osservazioni non vi abbiano lasciato indifferenti; lo siamo perché sappiamo bene quanto siano
           preziose per ognuno di noi le informazioni che giornalmente salviamo nei nostri PC: molto, molto di più del valore
           del computer in sé. E purtroppo sappiamo altrettanto bene che è inutile "chiudere la stalla quando i buoi sono
           scappati" per questa ragione Computeridea insiste nel sensibilizzare i propri Clienti su questo aspetto tanto importante
           quanto, purtroppo, troppo spesso trascurato.</p>
-        <p class="service__text">Se volete approfondire l'argomento,
-          <a class="service__link" href="mailto:info@computeridea.eu">Contattateci</a> per studiare insieme il metodo e gli strumenti più efficaci per effettuare dei backup sicuri e
+        <p class="content__text">Se volete approfondire l'argomento,
+          <a class="content__link" href="mailto:info@computeridea.eu">Contattateci</a> per studiare insieme il metodo e gli strumenti più efficaci per effettuare dei backup sicuri e
           completi di tutti i Vostri dati.</p>
       </div>
-      <div class="service" id="rimozione-virus">
-        <h2 class="heading-2 service__title mb-sm">Rimozione virus</h2>
-        <img src="img/antivirus.jpg" alt="Foto antivirus" class="service__img fl-right">
-        <p class="service__text">Pommy ipsum gobsmacked posh nosh bossy britches, in the jacksy ridicule dignified. Cottage pie 'tis guinness a comely
+      <div class="service-separator" id="rimozione-virus">&nbsp;</div>
+      <div class="content">
+        <h2 class="heading-2 content__title mb-sm">Rimozione virus</h2>
+        <img src="img/antivirus.jpg" alt="Foto antivirus" class="content__img fl-right">
+        <p class="content__text">Pommy ipsum gobsmacked posh nosh bossy britches, in the jacksy ridicule dignified. Cottage pie 'tis guinness a comely
           wench chaps flip flops 'tis, alright geezer ey up duck off t'pub odds and sods. Up at the crack of dawn gallivanting
           around rather could be a bit of a git, nigh superb. A right royal knees up have a kip spend a penny through the
           dales easy peasy cheesed off shortbread, nose rag bovver boots goggledegook Elementary my dear Watson. Off t'pub
@@ -151,7 +187,7 @@
           of brass yorkshire pudding tally-ho see a man about a dog some mothers do 'ave 'em, a comely wench up the duff
           have a butcher's at this fork out narky up the duff. </p>
 
-        <p class="service__text">Penny-dreadful done up like a kipper a bit wonky it's just not cricket nicked, superb leisurely ee bah gum. Hadn't
+        <p class="content__text">Penny-dreadful done up like a kipper a bit wonky it's just not cricket nicked, superb leisurely ee bah gum. Hadn't
           done it in donkey's years bossy britches could murder a pint scouser a week on Sunday throw a paddy 'tis, toad
           in the whole don't get your knickers in a twist jolly cheerio it's cracking flags. Yorkshire pudding have a gander
           one feels that knows bugger all about nowt devonshire cream tea bog off teacakes off t'shop one would like rumpy
@@ -160,50 +196,52 @@
           have a gander scatterbrained double dutch a comely wench down South a reet bobbydazzler, don't get your knickers
           in a twist fancied a flutter roast beef sausage roll bow ties are cool. </p>
 
-        <p class="service__text">Upper class ear hole oopsy-daisies ended up brown bread nigh, pie-eyed what a load of guff roast beef. Mush fake
+        <p class="content__text">Upper class ear hole oopsy-daisies ended up brown bread nigh, pie-eyed what a load of guff roast beef. Mush fake
           tan muck about apple and pears scrubber toad in the whole, meat and two veg cockney the chippy. Ask your mother
           if up at the crack of dawn wind up pulled a right corker done up like a kipper what a load of guff Moriarty, anorak
           rubbish have a kip bugger. Scones put me soaps back on fancy a cuppa accordingly throw a paddy, naff off grub's
           up give you a bell. </p>
       </div>
-      <div class="service" id="siti-web">
-        <h2 class="heading-2 service__title mb-sm">Realizzazione siti web</h2>
-        <img src="img/responsive-web.png" alt="Illustrazione su web designing" class="service__img fl-left">
-        <p class="service__text">Il sito Internet Aziendale è diventato molto più di un biglietto da visita: è l'immagine della Vostra Azienda, la
+      <div class="service-separator" id="siti-web">&nbsp;</div>
+      <div class="content">
+        <h2 class="heading-2 content__title mb-sm">Realizzazione siti web</h2>
+        <img src="img/responsive-web.png" alt="Illustrazione su web designing" class="content__img fl-left">
+        <p class="content__text">Il sito Internet Aziendale è diventato molto più di un biglietto da visita: è l'immagine della Vostra Azienda, la
           fiducia che ispira, la competenza che trasmette: non serve solo per farvi "trovare" da nuovi clienti; qualunque
           contatto, Cliente o Fornitore, darà sicuramente uno sguardo alla presentazione della vostra attività, ai prodotti
           e servizi offerti, e in un colpo d'occhio si farà un'idea ben precisa della vostra Azienda.</p>
-        <p class="service__text">Ecco perché non ci si può più permettere di avere una "paginetta fatta in casa" per rappresentarci on line; ascolteremo
+        <p class="content__text mb-lg">Ecco perché non ci si può più permettere di avere una "paginetta fatta in casa" per rappresentarci on line; ascolteremo
           le vostre richieste in fatto di grafica e contenuti, e realizzeremo insieme, unendo le vostre idee e le nostre
           proposte, il sito su misura per voi.</p>
         <h3 class="heading-3 heading-3--thin center-text">Qualche idea</h3>
-        <ul class="service__list">
-          <li class="service__list-item">Progettazione e realizzazione grafica sito anche multilingua</li>
-          <li class="service__list-item">Concept grafico Home Page e layout grafico delle pagine web</li>
-          <li class="service__list-item">Ottimizzazione delle immagini, creazione bottoni, icone personalizzate , banner, etc</li>
-          <li class="service__list-item">Inserimento contenuti e fotografie forniti dal cliente</li>
-          <li class="service__list-item">Inserimento video e filmati</li>
-          <li class="service__list-item">Creazione CONTATTI (link ai recapiti e-mail, mappa, link ai profili sociali, form per lasciare un messaggio e/o
+        <ul class="content__list">
+          <li class="content__list-item">Progettazione e realizzazione grafica sito anche multilingua</li>
+          <li class="content__list-item">Concept grafico Home Page e layout grafico delle pagine web</li>
+          <li class="content__list-item">Ottimizzazione delle immagini, creazione bottoni, icone personalizzate , banner, etc</li>
+          <li class="content__list-item">Inserimento contenuti e fotografie forniti dal cliente</li>
+          <li class="content__list-item">Inserimento video e filmati</li>
+          <li class="content__list-item">Creazione CONTATTI (link ai recapiti e-mail, mappa, link ai profili sociali, form per lasciare un messaggio e/o
             chiedere informazioni)</li>
-          <li class="service__list-item">Creazione Area Riservata (Standard o Avanzata)</li>
-          <li class="service__list-item">Ottimizzazione del sito per i motori di ricerca </li>
-          <li class="service__list-item">Contatore accessi ed installazione di programma di statistiche</li>
-          <li class="service__list-item">Modulo contatti con programma di risposta automatica </li>
-          <li class="service__list-item">Creazione di un sito compatibile con i diversi sistemi di navigazione e i diversi tipi di risoluzione dello schermo
+          <li class="content__list-item">Creazione Area Riservata (Standard o Avanzata)</li>
+          <li class="content__list-item">Ottimizzazione del sito per i motori di ricerca </li>
+          <li class="content__list-item">Contatore accessi ed installazione di programma di statistiche</li>
+          <li class="content__list-item">Modulo contatti con programma di risposta automatica </li>
+          <li class="content__list-item">Creazione di un sito compatibile con i diversi sistemi di navigazione e i diversi tipi di risoluzione dello schermo
           </li>
-          <li class="service__list-item">Servizio manutenzione per l'aggiornamento e modifiche al sito </li>
+          <li class="content__list-item">Servizio manutenzione per l'aggiornamento e modifiche al sito </li>
         </ul>
       </div>
-      <div class="service" id="fattura-elettronica">
-        <h2 class="heading-2 service__title mb-sm">Fattura elettronica P.A.</h2>
-        <p class="service__text">Dallo scorso 6 giugno 2014 è entrato in vigore l'obbligo della fatturazione elettronica nei confronti di alcune Pubbliche
+      <div class="service-separator" id="fattura-elettronica">&nbsp;</div>
+      <div class="content">
+        <h2 class="heading-2 content__title mb-sm">Fattura elettronica P.A.</h2>
+        <p class="content__text">Dallo scorso 6 giugno 2014 è entrato in vigore l'obbligo della fatturazione elettronica nei confronti di alcune Pubbliche
           Amministrazioni ( Ministeri, Agenzie Fiscali, Enti nazionali di previdenza ); dal 31 MARZO 2015 l’obbligo si estenderà
           a TUTTE le altre amministrazioni centrali e locali ( Comuni, Asl, Aziende Ospedaliere, Università, CCIAA, Autorità
           Portuali, etc. ). Una bella fetta di mercato ! </p>
         <div class="center-text mb-sm">
-          <img src="img/fattura-pa.png" alt="Fattura PA logo" class="service__img">
+          <img src="img/fattura-pa.png" alt="Fattura PA logo" class="content__img">
         </div>
-        <p class="service__text">Questa novità obbliga a dotarsi di soluzioni per generare le fatture esclusivamente in un formato elettronico strutturato,
+        <p class="content__text">Questa novità obbliga a dotarsi di soluzioni per generare le fatture esclusivamente in un formato elettronico strutturato,
           denominato Fattura PA ( o XML-PA ), per firmarle digitalmente ed inviarle attraverso uno dei canali resi disponibili
           dal Sistema di Interscambio ( SDI ). Sempre attraverso lo stesso canale, SDI restituisce le relative comunicazioni
           di eventuali errori o le ricevute a conferma dell’accettazione da parte del destinatario. Le fatture dematerializzate
@@ -213,32 +251,32 @@
           più questi clienti per non addentrarsi nell’ennesimo labirinto burocratico ed evitare di mangiarsi tutto il margine
           in assurde spese di gestione … e se invece fosse un modo per acquisire nuovi clienti?</p>
         <h3 class="heading-3 heading-3 thin center-text">NON RESTATE TAGLIATI FUORI DAL MERCATO!</h3>
-        <p class="service__text">Computeridea, che ha tra i suoi clienti molti enti pubblici, ha studiato a fondo queste tematiche insieme agli impatti
+        <p class="content__text">Computeridea, che ha tra i suoi clienti molti enti pubblici, ha studiato a fondo queste tematiche insieme agli impatti
           tecnologici e fiscali che tale normativa comporta, verificando sulla propria pelle le varie soluzioni. Abbiamo
           poi esteso la nostra esperienza ad alcuni clienti ed infine ci siamo accreditati come Intermediari di un ente certificato
           per potervi proporre una soluzione a tutto tondo. La nostra proposta si basa su 3 criteri essenziali: Semplicità:
           basta stampare la fattura ! Affidabilità: la sicurezza di un sistema che stiamo già utilizzando con successo da
           oltre 8 mesi. Economicità: il massimo risultato al minimo costo ( 1,50 € a fattura ) e nessuna fatica.</p>
         <h3 class="heading-3 heading-3 thin center-text">LA BUROCRAZIA LA LASCIATE A NOI, VOI DOVETE SOLO STAMPARE LA FATTURA!</h3>
-        <p class="service__text">L’invio avverrà tramite una stampante virtuale installata sul vostro PC, con la quale sarà possibile inviare in automatico
+        <p class="content__text">L’invio avverrà tramite una stampante virtuale installata sul vostro PC, con la quale sarà possibile inviare in automatico
           le fatture semplicemente mandandole in stampa. La formula "Tutto Compreso" prevede:</p>
-        <ul class="service__list mb-sm">
-          <li class="service__list-item">Invio automatico delle Fatture tramite apposita stampante virtuale ( senza dover generare un file PDF da allegare
+        <ul class="content__list mb-sm">
+          <li class="content__list-item">Invio automatico delle Fatture tramite apposita stampante virtuale ( senza dover generare un file PDF da allegare
             manualmente ad un messaggio di posta, normale o PEC ).</li>
-          <li class="service__list-item">Estrazione dei dati dalle fatture ed inserimento dinamico delle altre informazioni richieste dalla norma per ogni
+          <li class="content__list-item">Estrazione dei dati dalle fatture ed inserimento dinamico delle altre informazioni richieste dalla norma per ogni
             fattura PA.</li>
-          <li class="service__list-item">Convalida formale di ogni singola fattura, firma Digitale ed invio al Sistema di Interscambio.</li>
-          <li class="service__list-item">Gestione delle notifiche ad ogni stadio di avanzamento delle fatture e relative ricevute.</li>
-          <li class="service__list-item">Invio delle fatture in Conservazione Sostitutiva a norma per 10 anni presso Ente certificato.</li>
-          <li class="service__list-item">Accesso ad Area Riservata su un sito dedicato per la consultazione e il monitoraggio delle fatture inviate e archiviate.</li>
-          <li class="service__list-item">Assistenza da parte di Computeridea per tutte le fasi del processo.</li>
+          <li class="content__list-item">Convalida formale di ogni singola fattura, firma Digitale ed invio al Sistema di Interscambio.</li>
+          <li class="content__list-item">Gestione delle notifiche ad ogni stadio di avanzamento delle fatture e relative ricevute.</li>
+          <li class="content__list-item">Invio delle fatture in Conservazione Sostitutiva a norma per 10 anni presso Ente certificato.</li>
+          <li class="content__list-item">Accesso ad Area Riservata su un sito dedicato per la consultazione e il monitoraggio delle fatture inviate e archiviate.</li>
+          <li class="content__list-item">Assistenza da parte di Computeridea per tutte le fasi del processo.</li>
         </ul>
         <div class="center-text mb-sm">
           <button class="button button--dark" id="popup-open">Listino prezzi</button>
         </div>
         <div class="center-text mb-sm">
           <h3 class="heading-3">Il collegamento al tuo hub è
-            <a class="service__link" href="https://fatturaelettronica.computeridea.eu/">Semplicissimo!</a>
+            <a class="content__link" href="https://fatturaelettronica.computeridea.eu/">Semplicissimo!</a>
           </h3>
         </div>
         <div class="popup" id="popup">
@@ -300,48 +338,49 @@
             </table>
           </div>
         </div>
-        <p class="service__text center-text">Per maggiori informazioni contattaci al n. 010.377.71.76 oppure scrivi a
-          <a class="service__link" href="mailto:fatturaPA@computeridea.eu">fatturaPA@computeridea.eu</a>
+        <p class="content__text center-text">Per maggiori informazioni contattaci al n. 010.377.71.76 oppure scrivi a
+          <a class="content__link" href="mailto:fatturaPA@computeridea.eu">fatturaPA@computeridea.eu</a>
           <br />Saremo lieti di trovare la soluzione per te !</p>
       </div>
-      <div class="service" id="smaltimento-toner">
-        <h2 class="heading-2 service__title mb-sm">Smaltimento toner</h2>
+      <div class="service-separator" id="smaltimento-toner">&nbsp;</div>
+      <div class="content">
+        <h2 class="heading-2 content__title mb-sm">Smaltimento toner</h2>
         <h3 class="heading-3 center-text">L'ONEROSA GESTIONE DELLO SMALTIMENTO DEI TONER</h3>
-        <p class="service__text">Tutte le Aziende che stampano hanno l'obbligo di smaltire i residui esausti che producono (cartucce, toner, nastri
+        <p class="content__text">Tutte le Aziende che stampano hanno l'obbligo di smaltire i residui esausti che producono (cartucce, toner, nastri
           ecc...) seguendo norme particolarmente complesse e burocratiche e rischiando, oltre alla significativa perdita
           di tempo, di commettere errori che possono condurre a sanzioni amministrative e addirittura penali. Per l'Azienda
           che decide di trattare direttamente i rifiuti di stampa, rimanendone quindi responsabile, i passi obbligatori prevedono
           una puntuale e corretta gestione dei moduli F.I.R:</p>
         <h4 class="heading-4">ACQUISTO E VIDIMAZIONE DEL REGISTRO</h4>
-        <p class="service__text">I moduli F.I.R sono relativi ad ogni evento di ritiro e smaltimento. Essi devono essere conservati
+        <p class="content__text">I moduli F.I.R sono relativi ad ogni evento di ritiro e smaltimento. Essi devono essere conservati
           <strong>in un registro che va acquistato e fatto vidimare dalla Camera di Commercio.</strong>
         </p>
         <h4 class="heading-4">
           CONTROLLO DEI CODICI C.E.R.</h4>
-        <p class="service__text">Per la corretta compilazione del F.I.R è necessario sapere esattamente la natura del rifiuto ed il
+        <p class="content__text">Per la corretta compilazione del F.I.R è necessario sapere esattamente la natura del rifiuto ed il
           <strong>relativo codice C.E.R.</strong> che cambia in relazione alla pericolosità del suo contenuto.</p>
         <h4 class="heading-4">CONTROLLO DELLE AUTORIZZAZIONI</h4>
-        <p class="service__text">Non tutti i trasportatori e i successivi smaltitori sono Autorizzati a gestire tutti i codici C.E.R per cui
+        <p class="content__text">Non tutti i trasportatori e i successivi smaltitori sono Autorizzati a gestire tutti i codici C.E.R per cui
           <strong>l'Azienda produttrice del rifiuto e del F.I.R. è tenuta ad accertarsi di queste autorizzazioni e ne rimane responsabile.</strong>
         </p>
         <h4 class="heading-4">ACQUISIZIONE DELLE 2 COPIE</h4>
-        <p class="service__text">Il trasportatore inizia la compilazione del formulario in 4 copie, rilascia la prima copia all'Azienda, porta i materiali
+        <p class="content__text">Il trasportatore inizia la compilazione del formulario in 4 copie, rilascia la prima copia all'Azienda, porta i materiali
           a destino ove deve essere completato il formulario con il timbro e la firma della quarta copia che va infine restituita
           all'Azienda produttrice del rifiuto;
           <strong>quest'ultima si deve assicurare che ad ogni evento siano infine associate entrambe le copie, la prima e la quarta
             del F.I.R. correttamente compilato da tutti.</strong>
         </p>
         <h4 class="heading-4">IMPEGNO ANNUALE PER IL MUD</h4>
-        <p class="service__text">Ogni anno entro la fine del mese di Aprile,
+        <p class="content__text">Ogni anno entro la fine del mese di Aprile,
           <strong>l'Azienda produttrice del rifiuto e gestore dei F.I.R deve compilare il MUD</strong> (Modello Unico di Dichiarazione
           ambientale) e presentarlo presso la Camera di Commercio di competenza.</p>
         <h4 class="heading-4">CONSERVAZIONE</h4>
-        <p class="service__text">L'azienda produttrice del rifiuto
+        <p class="content__text">L'azienda produttrice del rifiuto
           <strong>deve conservare tutti i moduli F.I.R., perfettamente compilati, per 5 anni.</strong>
         </p>
         <div class="center-text">
           <h3 class="heading-3">ATTENZIONE ALLE SOLUZIONI CHE SEMBRANO FACILI</h3>
-          <p class="service__text">
+          <p class="content__text">
             <strong class="italic red">Diffidate fortemente dalle soluzioni che possono apparire più facili e magari gratuite.</strong>
             <br /> Avere qualcuno che ritira i residui di stampa e che fornisce un modulo F.I.R non risolve il problema all'Azienda
             poiché essa rimane responsabile di ciò che viene scritto sul modulo F.I.R, della sua opportuna gestione e della
@@ -352,23 +391,21 @@
             l'azienda a rischi severi. </p>
         </div>
         <h3 class="heading-3 center-text">LA SOLUZIONE: L'OPPORTUNITA' DEL SERVIZIO ZEROZEROTONER</h3>
-        <p class="service__text">Oggi è disponibile un servizio in abbonamento che toglie alle Aziende tutti questi oneri, chiamato zerozerotoner.
+        <p class="content__text">Oggi è disponibile un servizio in abbonamento che toglie alle Aziende tutti questi oneri, chiamato zerozerotoner.
           L'abbonamento è gestito e garantito dalla BERG PHI SRL (BERG), una società regolarmente iscritta all'albo Gestori
           Ambientali che ha brevettato il metodo e le apparecchiature per lo smaltimento dei materiali esausti di stampa
           e a cui vengono internamente trasferiti tutti gli obblighi burocratici e le relative responsabilità amministrative
           e penali. Nell'ambito dell'abbonamento BERG si fa altresì carico della fornitura di BOX ecologici (gli 00BOX) per
           la raccolta dei consumabili esausti e del loro ritiro. </p>
-        <p class="service__text center-text green">Rispettare la legge ha dei costi e solo con zerozerotoner la vostra Azienda ne è sollevata, perché BERG prende in
+        <p class="content__text center-text green">Rispettare la legge ha dei costi e solo con zerozerotoner la vostra Azienda ne è sollevata, perché BERG prende in
           carico le vostre incombenze.</p>
-        <p class="service__text center-text green">Abbonandosi al servizio zerozerotorer, l'Azienda contribuisce inoltre in modo attivo ad un futuro migliore per l'ambiente.</p>
-        <p class="service__text">
+        <p class="content__text center-text green">Abbonandosi al servizio zerozerotorer, l'Azienda contribuisce inoltre in modo attivo ad un futuro migliore per l'ambiente.</p>
+        <p class="content__text">
           Scopri i vantaggi di zerozerotoner
-          <a href="http://www.computeridea.eu/files/Brochure-ZeroZeroToner-COMPUTERIDEA-GOLD.pdf"
-            class="service__link">Leggi Qui</a>
+          <a href="http://www.computeridea.eu/files/Brochure-ZeroZeroToner-COMPUTERIDEA-GOLD.pdf" class="content__link">Leggi Qui</a>
         </p>
-        <p class="service__text">Scarica il dettaglio degli obblighi per le aziende ed i professionisti
-          <a href="http://www.computeridea.eu/files/Il-Problema-dei-Rifiuti-di-Stampa-COMPUTERIDEA-GOLD.pdf"
-            class="service__link">Clicca Qui</a>
+        <p class="content__text">Scarica il dettaglio degli obblighi per le aziende ed i professionisti
+          <a href="http://www.computeridea.eu/files/Il-Problema-dei-Rifiuti-di-Stampa-COMPUTERIDEA-GOLD.pdf" class="content__link">Clicca Qui</a>
         </p>
       </div>
     </div>

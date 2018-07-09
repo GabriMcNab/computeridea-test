@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+<head>
+  <title>Gestionale | Computeridea Snc Genova | Assistenza e riparazione PC</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Computeridea Informatica Personal Computer PC Hardware Software Assistenza Gestionali Contabilità Siti Web Monitor Stampanti">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo-box">
+      <img src="img/logo.png" class="logo" alt="Computeridea logo">
+    </a>
+    <ul class="nav__items">
+      <li class="nav__item">
+        <a href="index.html" class="nav__link">Home</a>
+      </li>
+      <li class="nav__item">
+        <a href="servizi.html" class="nav__link" id="servizi">Servizi</a>
+        <div class="dropdown" id="servizi-dropdown">
+          <ul class="dropdown__items">
+            <li class="dropdown__item">
+              <a href="servizi.html#assistenza" class="dropdown__link">Assistenza e riparazioni</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#sicurezza" class="dropdown__link">Sicurezza e backup dati</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#rimozione-virus" class="dropdown__link">Rimozione virus</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#siti-web" class="dropdown__link">Realizzazione siti web</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#fattura-elettronica" class="dropdown__link">Fattura elettronica P.A.</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="servizi.html#smaltimento-toner" class="dropdown__link">Smaltimento toner</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav__item current-page">
+        <a href="gestionale.html" class="nav__link" id="gestionale">Gestionale</a>
+        <div class="dropdown" id="gestionale-dropdown">
+          <ul class="dropdown__items">
+            <li class="dropdown__item">
+              <a href="gestionale.html" class="dropdown__link">Personalizzazioni software</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="ondaIQ.html" class="dropdown__link">Onda IQ</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav__item">
+        <a href="vendita.html" class="nav__link">Vendita</a>
+      </li>
+      <li class="nav__item">
+        <a href="contatti.html" class="nav__link">Contatti</a>
+      </li>
+    </ul>
+    <div class="nav__contacts">
+      <a class="contact" href="mailto:info@computeridea.eu">
+        <svg class="contact__icon">
+          <use xlink:href="img/sprite.svg#envelope"></use>
+        </svg>
+        <p class="contact__text">Scrivici</p>
+      </a>
+      <a class="contact" href="tel:0103777176">
+        <svg class="contact__icon">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        <p class="contact__text">010 377 7176</p>
+      </a>
+    </div>
+    <input type="checkbox" class="hamburger__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="hamburger__button">
+      <span class="hamburger__icon">&nbsp;</span>
+    </label>
+  </nav>
+
+  <main class="gestionale-container">
+    <div class="content content--big center-text max-width">
+      <h2 class="heading-2 mb-sm">Personalizzazioni software</h2>
+      <p class="content__text justify mb-sm">Per soddisfare le richieste più particolari, eseguiamo personalizzazioni ai moduli base: dalle semplici modifiche delle
+        stampe, fino alle più complesse integrazioni, che rappresentano la soluzione elettiva delle problematiche più specifiche.
+        Solo per fare qualche esempio, abbiamo analizzato e sviluppato procedure personalizzate per la gestione avanzata
+        della cantieristica navale, degli agenti, delle vetrerie, dell'impiantistica elettrica e del settore tipografico,
+        ma se ne aggiungono nuove ogni giorno...</p>
+      <p class="content__text justify mb-sm">Consultateci per maggiori informazioni: saremo lieti di soddisfare le Vostre curiosità anche tramite una dimostrazione
+        pratica del programma presso i Vostri uffici:
+        <a href="mailto:assistenza@computeridea.eu" class="content__link">assistenza@computeridea.eu</a>
+      </p>
+      <div class="gallery mb-sm">
+        <div class="gallery__item">
+          <img src="img/cantieri-navali.jpg" alt="foto di un porto" class="gallery__img">
+          <div class="gallery__text-box">
+            <h4 class="heading-4">Gestione cantieri navali</h4>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="img/vetrerie.jpg" alt="foto di una fabbrica" class="gallery__img">
+          <div class="gallery__text-box">
+            <h4 class="heading-4">Gestione vetrerie</h4>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="img/servizi-ambientali.jpg" alt="turbine eoliche" class="gallery__img">
+          <div class="gallery__text-box">
+            <h4 class="heading-4">Servizi ambientali</h4>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="img/tipografia.jpg" alt="due lettere A" class="gallery__img">
+          <div class="gallery__text-box">
+            <h4 class="heading-4">Gestione tipografia</h4>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="img/etichette.jpg" alt="etichette" class="gallery__img">
+          <div class="gallery__text-box">
+            <h4 class="heading-4">Gestione stampa etichette</h4>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="img/veicoli-industriali.jpg" alt="veicolo industriale" class="gallery__img">
+          <div class="gallery__text-box">
+            <h4 class="heading-4">Gestione veicoli industriali</h4>
+          </div>
+        </div>
+      </div>
+      <a href="mailto:assistenza@computeridea.eu" class="button button--dark mb-sm">Richiedi informazioni</a>
+      <h1>Chiedere riguardo i vari form (richiesta demo, richiesta moduli ondaIQ, ecc...)</h1>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <nav class="footer__nav">
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Mappa del Sito</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__legal">
+        <p>COMPUTERIDEA S.N.C. di Piazzalunga Fabio & C.</p>
+        <p>Sede Legale : Via G. Boero 16/17 GENOVA - Reg. Imp. Genova 03429240108 - C.C.I.A.A. R.E.A. 344179</p>
+        <p>Ufficio Commerciale: Via Sturla, 54 R - 16131 - GENOVA - Tel. 010.377.71.76 - Fax 010.377.63.71 - C.F./P.I. 03429240108</p>
+        <p>info@computeridea.eu - computerideasnc@pec.it</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">&copy; Computeridea 2018</span>
+      <div class="social">
+        <a href="#" class="social__icon-box">
+          <svg class="social__icon">
+            <use xlink:href="img/brands.svg#twitter"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__icon-box">
+          <svg class="social__icon">
+            <use xlink:href="img/brands.svg#facebook"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__icon-box">
+          <svg class="social__icon">
+            <use xlink:href="img/brands.svg#linkedin"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="scripts/dropdown.js"></script>
+  <script src="scripts/navbar.js"></script>
+
+</body>
+
+</html>

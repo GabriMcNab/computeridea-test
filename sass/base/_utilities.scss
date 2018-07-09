@@ -1,25 +1,33 @@
 .mb-xs {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 
 .mb-sm {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
 
 .mb-md {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .mb-lg {
-  margin-bottom: 6rem; 
+  margin-bottom: 6rem !important; 
 }
 
 .mb-xl {
-  margin-bottom: 8rem; 
+  margin-bottom: 8rem !important; 
+}
+
+.mr-md {
+  margin-right: 4rem !important;
 }
 
 .show {
   transform: scaleY(1) !important;
+}
+
+.toggle {
+  height: 100% !important;
 }
 
 .fl-left {
@@ -34,6 +42,10 @@
 
 .center-text {
   text-align: center;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .italic {
@@ -63,4 +75,8 @@
 
 .active {
   background-color: $color-primary-light;
+}
+
+.max-width {
+  max-width: 120rem !important;
 }
