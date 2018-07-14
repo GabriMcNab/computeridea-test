@@ -139,6 +139,9 @@ html {
   float: right;
   margin-left: 2rem; }
 
+.inline {
+  display: inline; }
+
 .center-text {
   text-align: center; }
 
@@ -228,8 +231,9 @@ html {
 .card {
   border: 1px solid rgba(41, 128, 185, 0.5);
   border-radius: 3px;
+  min-height: 44rem;
   margin: 1.5vw;
-  padding: 2rem 2.5rem;
+  padding: 2.5rem;
   font-size: 1.6rem;
   color: #555;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
@@ -256,7 +260,8 @@ html {
     font-weight: 400;
     opacity: 0.8;
     transition: all 0.2s;
-    color: #185f8e; }
+    color: #185f8e;
+    margin-top: auto; }
     .card__link:hover {
       opacity: 1;
       transform: translateY(-3px); }
@@ -345,7 +350,7 @@ html {
 
 .content {
   margin: 1rem 0.5rem;
-  padding: 2rem 3rem;
+  padding: 3rem 5rem;
   border-radius: 3px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
@@ -375,7 +380,7 @@ html {
     text-indent: -1em;
     padding: 1rem; }
   .content__list-item {
-    margin-bottom: 1rem; }
+    margin-bottom: 1.5rem; }
   .content__link:link, .content__link:visited {
     display: inline-block;
     color: #2980b9;
@@ -554,14 +559,11 @@ html {
       background-color: rgba(0, 0, 0, 0.3); } }
   .popup__content {
     position: relative;
+    max-width: 120rem;
     padding: 0 3rem;
     background-color: #f1f1f1;
     transform: scale(0.25);
-    transition: transform 0.5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    transition: transform 0.5s; }
   .popup__close {
     border: none;
     background-color: transparent;
@@ -717,15 +719,15 @@ html {
 .sidebar {
   background-image: linear-gradient(to right bottom, #07315b, #2980b9);
   color: #fff;
-  flex: 0 0 30rem;
+  flex: 0 0 28rem;
   order: 2; }
   .sidebar__items {
     text-align: right;
     list-style: none;
-    width: 30rem;
+    width: 28rem;
     position: fixed;
     top: 10rem;
-    left: calc(100% - 30rem); }
+    left: calc(100% - 28rem); }
   .sidebar__item {
     position: relative; }
     .sidebar__item:not(:last-child) {
@@ -872,9 +874,8 @@ html {
       transform: translateY(-2px) scale(1.02); }
 
 .gestionale-container {
-  margin-top: 8rem;
-  display: flex;
-  justify-content: center; }
+  background-color: #ddd;
+  padding: 0 0.5rem; }
 
 body {
   background-color: #ddd; }

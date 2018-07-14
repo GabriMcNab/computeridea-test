@@ -23,16 +23,12 @@
 
   &__content {
     position: relative;
+    max-width: 120rem;
     padding: 0 3rem;
     background-color: $color-grey-light-1;
 
     transform: scale(0.25);
     transition: transform 0.5s;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   &__close {

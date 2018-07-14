@@ -2,16 +2,16 @@
   background-image: $gradient-primary;
   color: #fff;
 
-  flex: 0 0 30rem;
+  flex: 0 0 28rem;
   order: 2;
 
   &__items {
     text-align: right;
     list-style: none;
-    width: 30rem;
+    width: 28rem;
     position: fixed;
     top: 10rem;
-    left: calc(100% - 30rem);
+    left: calc(100% - 28rem);
   }
 
   &__item {
