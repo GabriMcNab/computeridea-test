@@ -2,7 +2,7 @@
   border: 1px solid rgba($color-primary-light, 0.5);
   border-radius: 3px;
   min-height: 44rem;
-  margin: 1.5vw;
+  margin: 1vw;
   padding: 2.5rem;
   font-size: 1.6rem;
   color: $color-grey-dark-2;
@@ -58,5 +58,13 @@
 
   @include respond(tab-port) {
     flex: 0 0 45%;
+  }
+
+  @include respond(phone) {
+    min-height: auto;
+    margin: 0;
+    margin-bottom: 2rem;
+
+    flex: 0 0 100%;
   }
 }

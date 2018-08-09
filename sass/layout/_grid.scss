@@ -1,10 +1,15 @@
 .grid {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 3px;
+  max-width: 120rem;
+
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 
   @include respond(phone) {
-    flex-direction: column;
+    padding: 0; 
   }
 }

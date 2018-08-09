@@ -5,12 +5,17 @@
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 
-  &--big {
-    padding: 2rem 10% !important;
-  }
-
   &--half {
-    flex: 0 0 49.17%;
+    flex: 0 0 49%;
+
+    @include respond(tab-port) {
+      flex: 0 0 100%;
+    }
+
+    @include respond(big-desktop) {
+      flex: 0 0 45%;
+      margin: 1rem auto !important;
+    }
   }
 
   &__title {
@@ -19,9 +24,14 @@
 
   &__img {
     width: 50%;
+    max-width: 60rem;
     margin-bottom: 2rem;  
     border-radius: 5px; 
     position: relative;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &__text {
@@ -44,6 +54,10 @@
     list-style-position: inside;
     text-indent: -1em;
     padding: 1rem;
+
+    @include respond(phone) {
+      column-count: 1;
+    }
   }
 
   &__list-item {
@@ -60,5 +74,13 @@
       color: $color-primary-dark;
       transform: translateY(-2px) scale(1.01);
     }
+  }
+
+  @include respond(phone) {
+    padding: 2rem 3rem;
+  }
+
+  @include respond(big-desktop) {
+    margin: 1rem 25rem;
   }
 }

@@ -9,7 +9,7 @@
   transform-origin: top;
   transition: all 0.2s;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     position: relative;
     visibility: visible;
     transform: scale(1);

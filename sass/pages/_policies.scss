@@ -1,0 +1,31 @@
+.policy {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 5rem 10rem;
+  background-color: #fff;
+
+  &__title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    color: $color-primary-dark;
+  }
+
+  &__list {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  &__list-item {
+    margin-bottom: 1.5rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 3rem 5rem
+  }
+
+  @include respond(phone) {
+    padding: 2rem 3rem
+  }
+}

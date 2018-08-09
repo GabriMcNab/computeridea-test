@@ -10,6 +10,9 @@
   <link rel="shortcut icon" type="image/x-" href="img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
+  />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
 </head>
 
 <body>
@@ -19,11 +22,11 @@
       <img src="img/logo.png" class="logo" alt="Computeridea logo">
     </a>
     <ul class="nav__items">
-      <li class="nav__item">
+      <li class="nav__item current-page">
         <a href="index.html" class="nav__link">Home</a>
       </li>
       <li class="nav__item">
-        <a href="servizi.html" class="nav__link" id="servizi">Servizi</a>
+        <span class="nav__link" id="servizi">Servizi</span>
         <div class="dropdown" id="servizi-dropdown">
           <ul class="dropdown__items">
             <li class="dropdown__item">
@@ -47,8 +50,8 @@
           </ul>
         </div>
       </li>
-      <li class="nav__item current-page">
-        <a href="gestionale.html" class="nav__link" id="gestionale">Gestionale</a>
+      <li class="nav__item">
+        <span class="nav__link" id="gestionale">Gestionale</span>
         <div class="dropdown" id="gestionale-dropdown">
           <ul class="dropdown__items">
             <li class="dropdown__item">
@@ -88,6 +91,7 @@
   </nav>
   <!-- header -->
   <header class="hero">
+    <div class="background">&nbsp;</div>
     <div id="canvas" class="canvas"></div>
     <div class="hero__content-box">
       <img src="img/computeridea.svg" alt="computeridea" class="hero__title">
@@ -98,6 +102,13 @@
       Scopri i nostri servizi
     </a>
   </header>
+  <!-- Banner -->
+  <div class="banner banner--dark">
+    <a href="https://www.netsons.com/aff.php?aff=5448" class="banner__link">
+      <img srcset="img/hosting-pro.jpg 300w, img/hosting-pro_large.jpg 600w" sizes="(max-width: 900px) 70vw,(max-width:600px) 90vw,600px"
+        src="img/hosting-pro.jpg" alt="hosting pro banner" class="banner__img">
+    </a>
+  </div>
   <!-- Section services -->
   <main class="section-services">
     <h1 class="heading-1 heading-1--dark">I nostri principali servizi</h1>
@@ -127,7 +138,7 @@
         </ul>
         <span class="card__link">Leggi Tutto &rarr;</span>
       </a>
-      <a href="#" class="card">
+      <a href="gestionale.html" class="card">
         <svg class="card__icon">
           <use xlink:href="img/sprite.svg#chart-bar"></use>
         </svg>
@@ -136,9 +147,9 @@
           Perché non sia un software qualunque, ma il "Vostro" software, il nostro settore sviluppo è a disposizione per
           ogni tipo di personalizzazione, dalla minima modifica di una stampa, alla creazione ex novo di procedure che gestiscano
           completamente settori di nicchia: consultateci!!</p>
-        <span href="gestionale.html" class="card__link">Leggi Tutto &rarr;</span>
+        <span class="card__link">Leggi Tutto &rarr;</span>
       </a>
-      <a href="#" class="card">
+      <a href="servizi.html#siti-web" class="card">
         <svg class="card__icon">
           <use xlink:href="img/sprite.svg#code"></use>
         </svg>
@@ -176,25 +187,69 @@
       <span class="button__text">Scopri tutti i servizi</span>
     </a>
   </main>
-  <!-- Banner -->
-  <div class="banner banner--dark">
-    <a href="https://www.netsons.com/" class="banner__link">
-      <img src="img/hosting-pro.jpg" alt="hosting pro banner" class="banner__img">
-    </a>
-  </div>
   <!-- Section partners -->
   <section class="section-partners">
-    <h1 class="heading-1 heading-1--light">I nostri partners</h1>
+    <h1 class="heading-1 heading-1--light">I nostri Marchi</h1>
     <hr class="hr hr--light mb-sm">
     <div class="grid">
       <div class="partner__box">
-        <img class="partner__img" src="img/avg.png">
+        <img class="partner__img" srcset="img/marchi/APC_logo.jpg 300w ,img/marchi/APC_logo_large.jpg 600w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 600px"
+          alt="APC logo" src="img/marchi/APC_logo.jpg">
       </div>
       <div class="partner__box">
-        <img class="partner__img" src="img/hp.png" srcset="img/hp.svg">
+        <img class="partner__img" srcset="img/marchi/asus_logo.jpg 200w ,img/marchi/asus_logo_large.jpg 400w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 400px"
+          alt="asus logo" src="img/marchi/asus_logo.jpg">
       </div>
       <div class="partner__box">
-        <img class="partner__img" src="img/apc.png" srcset="img/apc.svg">
+        <img class="partner__img" srcset="img/marchi/Ati logo.jpg 200w ,img/marchi/Ati logo_large.jpg 400w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 400px"
+          alt="Ati logo" src="img/marchi/Ati logo.jpg">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" alt="avg logo" src="img/marchi/avg-logo.png">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" alt="Canon logo" src="img/marchi/Canon_logo.jpg">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" srcset="img/marchi/EdisoftwarePartnerCertificato.jpg 300w ,img/marchi/EdisoftwarePartnerCertificato_large.jpg 600w"
+          sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 400px" alt="Edisoftware logo" src="img/marchi/EdisoftwarePartnerCertificato.jpg">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" srcset="img/marchi/EpsonLogo.jpg 300w ,img/marchi/EpsonLogo_large.jpg 600w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 400px"
+          alt="Epson logo" src="img/marchi/EpsonLogo.jpg">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" alt="HP logo" src="img/marchi/HP Partner.png">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" alt="IBM logo" src="img/marchi/ibm-logo-300x158.jpg">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" srcset="img/marchi/intel-logo-blue.jpg 200w ,img/marchi/intel-logo-blue_large.jpg 400w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 400px"
+          alt="intel logo" src="img/marchi/intel-logo-blue.jpg">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" srcset="img/marchi/LG-logo.jpg 200w ,img/marchi/LG-logo_large.jpg 400w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 400px"
+          alt="LG logo" src="img/marchi/LG-logo.jpg">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" alt="logo" src="img/marchi/logo3.jpg">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" srcset="img/marchi/nvidia_logo.jpg 200w ,img/marchi/nvidia_logo.jpg 400w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 400px"
+          alt="nvidia logo" src="img/marchi/nvidia_logo.jpg">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" srcset="img/marchi/philips_logo.png 200w ,img/marchi/philips_logo_large.png 400w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 400px"
+          alt="philips logo" src="img/marchi/philips_logo.png">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" srcset="img/marchi/samsung-logo.jpg 200w ,img/marchi/samsung-logo_large.jpg 400w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 400px"
+          alt="samsung logo" src="img/marchi/samsung-logo.jpg">
+      </div>
+      <div class="partner__box">
+        <img class="partner__img" srcset="img/marchi/sony-logo.jpg 200w ,img/marchi/sony-logo_large.jpg 400w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 400px"
+          alt="sony logo" src="img/marchi/sony-logo.jpg">
       </div>
     </div>
   </section>
@@ -204,10 +259,10 @@
       <nav class="footer__nav">
         <ul class="footer__links">
           <li>
-            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="privacy.html" class="footer__link">Privacy Policy</a>
           </li>
           <li>
-            <a href="#" class="footer__link">Mappa del Sito</a>
+            <a href="informativa-cookie.html" class="footer__link">Informativa sui Cookie</a>
           </li>
         </ul>
       </nav>
@@ -249,6 +304,30 @@
   <script src="scripts/dropdown.js"></script>
   <script src="scripts/navbar.js"></script>
   <script src="scripts/scroll-animation.js"></script>
+
+  <!-- Cookie banner -->
+  <script>
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#252e39"
+          },
+          "button": {
+            "background": "transparent",
+            "text": "#14a7d0",
+            "border": "#14a7d0"
+          }
+        },
+        "content": {
+          "message": "Questo sito utilizza i cookie per rendere più efficienti le tue visite e migliorare l'esperienza di navigazione sul nostro sito web.",
+          "dismiss": "Ok!",
+          "link": "Scopri di più",
+          "href": "http://www.computeridea.eu/cookie.html"
+        }
+      })
+    });
+  </script>
 
 </body>
 

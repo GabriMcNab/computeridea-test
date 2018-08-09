@@ -7,3 +7,11 @@
 .tg .tg-dfe8{font-weight:bold;background-color:#185f8e;text-align:center;vertical-align:top}
 .tg .tg-ozz1{background-color:#f5f5f5;font-weight:bold;border-color:#999999;text-align:right;vertical-align:top}
 .tg .tg-dbhw{background-color:#e5f0ff;text-align:center;vertical-align:top}
+
+.tg td,
+.tg th {
+  @include respond(phone) {
+    font-size: 10px;
+    padding: 5px;
+  }
+}

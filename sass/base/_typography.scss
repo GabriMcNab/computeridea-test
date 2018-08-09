@@ -63,6 +63,10 @@ html {
   &--light {
     color: $color-grey-light-1;
   }
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 }
 
 .heading-3 {

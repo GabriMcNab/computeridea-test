@@ -10,14 +10,40 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include respond(tab-port) {
+    background-image: none;
+    background-color: #fff;
+    padding: 0;
+  }
 }
 
 .left {
   flex: 0 0 45%;
+
+  @include respond(tab-port) {
+    padding: 3rem 5rem;
+    flex: 0 0 100%;
+  }
+
+  @include respond(phone) {
+    padding: 1.5rem 2.5rem;
+  }
 }
 
 .right {
   flex: 0 0 45%;
+
+  @include respond(tab-port) {
+    padding: 2rem 4rem;
+    flex: 0 0 100%;
+    background-image: $gradient-primary;
+  }
+
+  @include respond(phone) {
+    padding: 1.5rem 2.5rem;
+  }
 }
 
 .about {

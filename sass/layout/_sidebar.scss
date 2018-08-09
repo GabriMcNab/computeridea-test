@@ -57,4 +57,9 @@
     text-transform: uppercase;
     transition: all 0.2s;
   }
+
+  @include respond(tab-port) {
+    display: none;
+    visibility: hidden;
+  }
 }

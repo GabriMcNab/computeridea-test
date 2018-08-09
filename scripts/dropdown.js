@@ -4,14 +4,14 @@ const menu = document.querySelector(".nav__items");
 
 btn.addEventListener("click", () => menu.classList.toggle("show"));
 
-//Show navbar dorpdown on click if screen width < 600px
+//Show navbar dorpdown on click if screen width < 900px
 const servizi = document.querySelector("#servizi");
 const gestionale = document.querySelector("#gestionale");
 
 const serviziDropdown = document.querySelector("#servizi-dropdown");
 const gestionaleDropdown = document.querySelector("#gestionale-dropdown");
 
-const mediaQuery = window.matchMedia( "(max-width: 600px)" )
+const mediaQuery = window.matchMedia( "(max-width: 900px)" );
 
 if(mediaQuery.matches) {
   servizi.addEventListener("click", (e) => {

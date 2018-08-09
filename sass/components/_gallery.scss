@@ -17,6 +17,15 @@
     &:hover {
       transform: translateY(-5px) scale(1.1);
     }
+
+    @include respond(tab-port) {
+      flex: 0 0 45%;
+    }
+
+    @include respond(phone) {
+      margin: 0.5rem;
+      flex: 0 0 70%;
+    }
   }
 
   &__img {

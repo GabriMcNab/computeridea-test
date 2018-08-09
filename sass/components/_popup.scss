@@ -1,5 +1,5 @@
 .popup {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
@@ -23,12 +23,37 @@
 
   &__content {
     position: relative;
-    max-width: 120rem;
-    padding: 0 3rem;
+    max-width: 90rem;
+    max-height: 90vh;
+    padding: 2rem 6rem;
     background-color: $color-grey-light-1;
+    overflow: auto;
 
     transform: scale(0.25);
     transition: transform 0.5s;
+
+    @include respond(phone) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__img {
+    &--half {
+      width: 40%;
+    }
+
+    &--full {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sub-container {
+    flex: 0 0 45%;
   }
 
   &__close {

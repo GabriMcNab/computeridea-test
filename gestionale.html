@@ -19,11 +19,11 @@
       <img src="img/logo.png" class="logo" alt="Computeridea logo">
     </a>
     <ul class="nav__items">
-      <li class="nav__item">
+      <li class="nav__item current-page">
         <a href="index.html" class="nav__link">Home</a>
       </li>
       <li class="nav__item">
-        <a href="servizi.html" class="nav__link" id="servizi">Servizi</a>
+        <span class="nav__link" id="servizi">Servizi</span>
         <div class="dropdown" id="servizi-dropdown">
           <ul class="dropdown__items">
             <li class="dropdown__item">
@@ -47,8 +47,8 @@
           </ul>
         </div>
       </li>
-      <li class="nav__item current-page">
-        <a href="gestionale.html" class="nav__link" id="gestionale">Gestionale</a>
+      <li class="nav__item">
+        <span class="nav__link" id="gestionale">Gestionale</span>
         <div class="dropdown" id="gestionale-dropdown">
           <ul class="dropdown__items">
             <li class="dropdown__item">
@@ -100,6 +100,7 @@
       </ul>
     </nav>
 
+    <!-- Main content -->
     <div class="gestionale-container">
       <div class="service-separator" id="ondaiq">&nbsp;</div>
       <div class="content">
@@ -121,7 +122,7 @@
           <img class="content__img" src="img/ondaiq.png" alt="logo Onda IQ" />
         </div>
         <h3 class="heading-3">Facile ed intuitivo</h3>
-        <img src="img/vetrerie.jpg" alt="" class="content__img fl-right">
+        <img src="img/ondaiq1big.png" alt="" class="content__img fl-right">
         <p class="content__text">Nata dall'esperienza con oltre 6.000 Aziende utenti di OndaUp, IQ ne rappresenta l'ideale evoluzione sotto tutti
           gli aspetti: tecnologici, grafici ma soprattutto funzionali, diventando la soluzione completa e sicura per le piccole
           e medie imprese dei più svariati settori. La suddivisione in moduli consente inizialmente all'Azienda di calibrare
@@ -302,6 +303,8 @@
         <div class="center-text mb-md">
           <button class="button button--dark" id="popup-open">Plus di IQ</button>
         </div>
+        
+        <!-- Popup -->
         <div class="popup" id="popup">
           <div class="popup__content" id="popup-content">
             <h3 class="heading-3 center-text">I plus di OndaIQ</h3>
@@ -309,33 +312,47 @@
               l'elemento cardine su cui ruotano le decisioni dell'azienda. Il tutto in maniera completamente automatica ed
               in tempo reale! Ecco perchè scegliere Il Gestionale Intelligente.</p>
             <h4 class="heading-4">Dashboard</h4>
+            <img src="img/ondaiq3.png" alt="Dashboard di ondaiQ" class="popup__img popup__img--half fl-right">
             <p class="content__text">Pianificazione interrogazioni e verifiche automatizzate personalizzate per utente e frequenza - Funzione "Allarme"
               automatico al verificarsi di determinate condizioni previste dall'utente - Funzione "Messaggi Reminder" , con
               possibilità di invio sulla Dashboard personale di altri utenti. E' il cuore del Gestionale Intelligente, è
               il pannello di controllo che lega l'operatore all'applicativo gestionale, permettendogli di visualizzare le
-              informazioni in maniera totalmente automatica. La Dashboard avverte l'amministrazione sui pagamenti in scadenza,
-              informa il direttore commerciale che la previsione mensile di fatturato è stata raggiunta, notifica al reparto
-              logistica che un articolo sta raggiungendo un livello di sottoscorta ed è necessario provvedere all'approvvigionamento,
-              etc.
+              informazioni in maniera totalmente automatica.</p>
+            <img src="img/ondaiq4.png" alt="Dashboard di ondaiQ" class="popup__img popup__img--half fl-left">
+            <p class="content__text mb-xl">La Dashboard avverte l'amministrazione sui pagamenti in scadenza, informa il direttore commerciale che la previsione
+              mensile di fatturato è stata raggiunta, notifica al reparto logistica che un articolo sta raggiungendo un livello
+              di sottoscorta ed è necessario provvedere all'approvvigionamento, etc.
             </p>
             <h4 class="heading-4">Navigazione visuale documenti</h4>
             <p class="content__text">Visualizzazione grafica dell'origine e dell'evoluzione di ciascun documento con possibilità di accesso diretto
-              e modifica al documento stesso. Lo strumento che permette di visualizzare in modo grafico ed interattivo le
-              relazioni ed il workflow dei documenti per una consultazione dei dati rapida ed efficace.</p>
+              e modifica al documento stesso.</p>
+            <img src="img/ondaiq5.png" alt="Dashboard di ondaiQ" class="popup__img popup__img--full fl-left mb-sm">
+            <p class="content__text">Lo strumento che permette di visualizzare in modo grafico ed interattivo le relazioni ed il workflow dei documenti
+              per una consultazione dei dati rapida ed efficace.</p>
             <h4 class="heading-4">I cruscotti manageriali</h4>
             <p class="content__text">Avanzati strumenti di analisi e controllo presentati sotto forma di report, grafici, cruscotti e intuitive tabelle
               excel per avere sempre sotto controllo l'andamento del business.</p>
             <h4 class="heading-4">Analisi e cruscotti finanziari</h4>
             <p class="content__text">Analisi liquidità e Ciclo Monetario - Ritardo incassi e analisi costo del ritardo - Analisi Pagamenti</p>
-            <h4 class="heading-4">Analisi previsionale per banca</h4>
-            <p class="content__text">Scadenze da Contabilità - Scadenze da Documenti provvisori (ordini / DDT) - Integrazione scadenze da scritture
-              extra-contabili ( Stipendi, F24, assicurazioni, affitto, etc.)</p>
-            <h4 class="heading-4">Cruscotto economico</h4>
-            <p class="content__text">Creazione schemi di Analisi e Budget su conti economici con possibilità di riclassificazione - Analisi dati Preventivo
-              / consuntivo - Analisi Previsionale</p>
+            <div class="popup__container">
+              <div class="popup__sub-container">
+                <img src="img/ondaiq6.png" alt="Dashboard di ondaiQ" class="popup__img popup__img--full fl-left mb-sm">
+                <h4 class="heading-4">Analisi previsionale per banca</h4>
+                <p class="content__text">Scadenze da Contabilità - Scadenze da Documenti provvisori (ordini / DDT) - Integrazione scadenze da scritture
+                  extra-contabili ( Stipendi, F24, assicurazioni, affitto, etc.)</p>
+              </div>
+              <div class="popup__sub-container">
+                <img src="img/ondaiq7.png" alt="Dashboard di ondaiQ" class="popup__img popup__img--full fl-left mb-sm">
+                <h4 class="heading-4">Cruscotto economico</h4>
+                <p class="content__text">Creazione schemi di Analisi e Budget su conti economici con possibilità di riclassificazione - Analisi dati
+                  Preventivo / consuntivo - Analisi Previsionale</p>
+              </div>
+            </div>
             <button class="popup__close" id="popup-close">&times;</button>
           </div>
         </div>
+        <!-- Fine popup -->
+
         <p class="content__text justify mb-sm">
           Prodotto da Edisoftware S.r.l., primaria software house di cui siamo partner certificati da ormai oltre 13 anni, OndaIQ lo
           strumento ideale per gestire non solo la contabilità, ma per ottimizzare tutta l'attività aziendale: dalla fatturazione
@@ -352,7 +369,8 @@
         <p class="content__text justify mb-sm">KarthaDoc, software di archiviazione documentale integrato con OndaIQ, permette invece di ottimizzare il tempo in
           Azienda gestendo al meglio tutti i documenti contabili ed extra contabili per una consultazione immediata e sempre
           a portata di mano; inoltre, è già pronto per la conservazione sostitutiva dei documenti e la fatturazione elettronica
-          certificata.</p>
+          certificata.
+        </p>
         <p class="content__text justify mb-md">Il Servizio di Assistenza Tecnica sui gestionali abbina alle più aggiornate conoscenze informatiche un'approfondita
           esperienza contabile, fiscale ed operativa: per affiancare l'utente durante l'uso quotidiano della procedura, sono
           inoltre a disposizione dei nostri Clienti una Hot-Line Telefonica gratuita, ed il servizio di collegamento remoto,
@@ -372,40 +390,58 @@
         </p>
         <div class="gallery mb-sm">
           <div class="gallery__item">
-            <img src="img/cantieri-navali.jpg" alt="foto di un porto" class="gallery__img">
-            <div class="gallery__text-box">
-              <h4 class="heading-4">Gestione cantieri navali</h4>
-            </div>
+            <a target="_blank" href="files/Cantieri Navali.pdf" class="gallery__link">
+              <img srcset="img/cantieri-navali_large.jpg 1000w, img/cantieri-navali.jpg 300w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 60vw, 300px"
+                src="img/cantieri-navali.jpg" alt="foto di un porto" class="gallery__img">
+              <div class="gallery__text-box">
+                <h4 class="heading-4">Gestione cantieri navali</h4>
+              </div>
+            </a>
           </div>
           <div class="gallery__item">
-            <img src="img/vetrerie.jpg" alt="foto di una fabbrica" class="gallery__img">
-            <div class="gallery__text-box">
-              <h4 class="heading-4">Gestione vetrerie</h4>
-            </div>
+            <a target="_blank" href="files/Vetrerie.pdf" class="gallery__link">
+              <img srcset="img/vetrerie_large.jpg 1000w, img/vetrerie.jpg 300w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 60vw, 300px"
+                src="img/vetrerie.jpg" alt="foto di una fabbrica" class="gallery__img">
+              <div class="gallery__text-box">
+                <h4 class="heading-4">Gestione vetrerie</h4>
+              </div>
+            </a>
           </div>
           <div class="gallery__item">
-            <img src="img/servizi-ambientali.jpg" alt="turbine eoliche" class="gallery__img">
-            <div class="gallery__text-box">
-              <h4 class="heading-4">Servizi ambientali</h4>
-            </div>
+            <a target="_blank" href="files/Servizi Ambientali.pdf" class="gallery__link">
+              <img srcset="img/servizi-ambientali_large.jpg 1000w, img/servizi-ambientali.jpg 300w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 60vw, 300px"
+                src="img/servizi-ambientali.jpg" alt="turbine eoliche" class="gallery__img">
+              <div class="gallery__text-box">
+                <h4 class="heading-4">Servizi ambientali</h4>
+              </div>
+            </a>
           </div>
           <div class="gallery__item">
-            <img src="img/tipografia.jpg" alt="due lettere A" class="gallery__img">
-            <div class="gallery__text-box">
-              <h4 class="heading-4">Gestione tipografia</h4>
-            </div>
+            <a target="_blank" href="files/Tipografia.pdf" class="gallery__link">
+              <img srcset="img/tipografia_large.jpg 1000w, img/tipografia.jpg 300w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 60vw, 300px"
+                src="img/tipografia.jpg" alt="due lettere A" class="gallery__img">
+              <div class="gallery__text-box">
+                <h4 class="heading-4">Gestione tipografia</h4>
+              </div>
+            </a>
           </div>
           <div class="gallery__item">
-            <img src="img/etichette.jpg" alt="etichette" class="gallery__img">
-            <div class="gallery__text-box">
-              <h4 class="heading-4">Gestione stampa etichette</h4>
-            </div>
+            <a target="_blank" href="files/Etichette.pdf" class="gallery__link">
+              <img srcset="img/etichette_large.jpg 1000w, img/etichette.jpg 300w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 60vw, 300px"
+                src="img/etichette.jpg" alt="etichette" class="gallery__img">
+              <div class="gallery__text-box">
+                <h4 class="heading-4">Gestione stampa etichette</h4>
+              </div>
+            </a>
           </div>
           <div class="gallery__item">
-            <img src="img/veicoli-industriali.jpg" alt="veicolo industriale" class="gallery__img">
-            <div class="gallery__text-box">
-              <h4 class="heading-4">Gestione veicoli industriali</h4>
-            </div>
+            <a target="_blank" href="files/Veicoli Industriali.pdf" class="gallery__link">
+              <img srcset="img/veicoli-industriali_large.jpg 1000w, img/veicoli-industriali.jpg 300w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 60vw, 300px"
+                src="img/veicoli-industriali.jpg" alt="veicolo industriale" class="gallery__img">
+              <div class="gallery__text-box">
+                <h4 class="heading-4">Gestione veicoli industriali</h4>
+              </div>
+            </a>
           </div>
         </div>
         <a href="mailto:assistenza@computeridea.eu" class="button button--dark mb-sm">Richiedi informazioni</a>
@@ -420,10 +456,10 @@
       <nav class="footer__nav">
         <ul class="footer__links">
           <li>
-            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="privacy.html" class="footer__link">Privacy Policy</a>
           </li>
           <li>
-            <a href="#" class="footer__link">Mappa del Sito</a>
+            <a href="informativa-cookie.html" class="footer__link">Informativa sui Cookie</a>
           </li>
         </ul>
       </nav>
@@ -459,6 +495,7 @@
   <!-- Main JS -->
   <script src="scripts/dropdown.js"></script>
   <script src="scripts/navbar.js"></script>
+  <script src="scripts/popup.js"></script>
   <script src="scripts/sidebar.js"></script>
 
 </body>
