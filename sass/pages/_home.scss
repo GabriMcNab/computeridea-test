@@ -55,14 +55,17 @@ body {
 
   &__title {
     width: 45vw;
+    height: 20rem;
     filter: drop-shadow(0 1rem 3rem rgba(0,0,0,0.6));
 
     @include respond(tab-port) {
       width: 60vw;
+      height: 15rem;
     }
 
     @include respond(phone) {
       width: 85vw;
+      height: 10rem;
     }
   }
 

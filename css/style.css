@@ -262,7 +262,7 @@ html {
 .card {
   border: 1px solid rgba(41, 128, 185, 0.5);
   border-radius: 3px;
-  min-height: 44rem;
+  height: 45rem;
   margin: 1vw;
   padding: 2.5rem;
   font-size: 1.6rem;
@@ -304,7 +304,7 @@ html {
       flex: 0 0 45%; } }
   @media only screen and (max-width: 37.5em) {
     .card {
-      min-height: auto;
+      height: auto;
       margin: 0;
       margin-bottom: 2rem;
       flex: 0 0 100%; } }
@@ -1027,13 +1027,16 @@ body {
         padding: 5vh 5vw; } }
   .hero__title {
     width: 45vw;
+    height: 20rem;
     filter: drop-shadow(0 1rem 3rem rgba(0, 0, 0, 0.6)); }
     @media only screen and (max-width: 56.25em) {
       .hero__title {
-        width: 60vw; } }
+        width: 60vw;
+        height: 15rem; } }
     @media only screen and (max-width: 37.5em) {
       .hero__title {
-        width: 85vw; } }
+        width: 85vw;
+        height: 10rem; } }
   @media only screen and (max-width: 56.25em) {
     .hero {
       height: auto; } }
